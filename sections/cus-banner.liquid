@@ -1,0 +1,62 @@
+<div class="banner banner--overlay">
+    <img src="{{ section.settings.image | img_url: 'master' }}" alt="image" class="imgFluid banner__bg">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="banner-content">
+                    <h1 class="banner-content__subHeading">Welcome to Our Website</h1>
+                    <h2 class="banner-content__heading">SPARK IN <span class="box-text">STYLE</span></h2>
+                    <p>
+                        I am Susan Thomas, originally from Gujarat, India now residing in Orland Park, IL. Fashion is my
+                        passion, especially Indian outfits. I hold high values to modesty, traditional, but yet classy
+                        clothing.
+                    </p>
+                    <a href="{{ section.settings.button_text }}" class="themeBtn">{{ section.settings.button_link }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+      "name": "Cus Banner",
+      "tag": "section",
+      "class": "announcement-bar-section",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "sub_title",
+          "default": "Collections",
+          "label": "Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Collections",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "default": "Collections",
+          "label": "Button Text"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+          }
+    ],
+    "presets": [
+        {
+          "name": "Cus Banner"
+        }
+      ]
+    }
+    {% endschema %}
