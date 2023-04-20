@@ -1,6 +1,9 @@
 // Initialize Wow
 new WOW().init();
 
+$('.cus-product-tabs .custom-tabs li:first-child a').addClass('active');
+        $('.cus-product-tabs .tab-content .tab-pane:first-child').addClass('show active');
+
 // Product Slider
 $(".productSlider").slick({
   autoplay: true,
