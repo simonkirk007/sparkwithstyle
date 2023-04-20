@@ -23,7 +23,8 @@
 
 
         {%- for block in section.blocks -%}
-            <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            {% assign anotherVar = someVar | plus: 1 %}
+            <div class="tab-pane fade" id="pills-{{ anotherVar }}" role="tabpanel" aria-labelledby="pills-{{ anotherVar }}-tab">
                 <div class='row'>
 
                     {% assign selected_collection = section.settings.collection %}
