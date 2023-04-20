@@ -19,3 +19,21 @@ form.search.header__search button.search__button {
 .varition-btn a {
     display: block;
 }
+
+
+form.search.header__search .field:after {
+    display: none;
+}
+form.search.header__search .field input.search__input {
+    width: 100%;
+    height: 45px;
+}
+
+form.search.header__search button.search__button {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    height: 43px;
+    width: auto;
+    padding: 0px 35px;
+}
