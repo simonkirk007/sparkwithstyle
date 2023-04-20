@@ -23,7 +23,7 @@
 
 
         {%- for block in section.blocks -%}
-            {% assign anotherVar = someVar | plus: 1 %}
+            {% assign anotherVar = anotherVar | plus: 1 %}
             <div class="tab-pane fade" id="pills-{{ anotherVar }}" role="tabpanel" aria-labelledby="pills-{{ anotherVar }}-tab">
                 <div class='row'>
 
