@@ -8,10 +8,13 @@
             </div>
         </div>
         <ul class="nav custom-tabs" id="pills-tab" role="tablist">
+            
             {%- for block in section.blocks -%}
+                {% assign someVar = someVar | plus: 1 %}
+                
             <li>
-                <a class="" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-                    aria-controls="pills-home" aria-selected="false">{{ block.settings.title | escape }}</a>
+                <a class="" id="pills-{{ someVar }}-tab" data-toggle="pill" href="#pills-{{ someVar }}" role="tab"
+                    aria-controls="pills-{{ someVar }}" aria-selected="false">{{ block.settings.title | escape }}</a>
             </li>
             {%- endfor -%}
             
