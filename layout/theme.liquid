@@ -40,6 +40,13 @@
     <script src="{{ 'fancybox.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'app.js' | asset_url }}" defer="defer"></script>
 
+
+    <script>
+        $('.cus-product-tabs .custom-tabs li:first-child a').addClass('active');
+        $('.cus-product-tabs .tab-content .tab-pane:first-child').addClass('show active');
+    </script>
+
+
     {{ content_for_header }}
 
     {%- liquid
