@@ -88,11 +88,40 @@
     },
     "a6980ae8-59cf-42e1-bfc5-8b69fcafefc7": {
       "type": "cus-reviews",
+      "blocks": {
+        "be608de8-a107-467c-accd-689dc69276b3": {
+          "type": "column",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/person-img-1.png",
+            "title": "Floyd Miles",
+            "content": "<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit<\/p>"
+          }
+        },
+        "2e75eec3-56e6-4207-86aa-b4cea9fe96ac": {
+          "type": "column",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/person-img-2.png",
+            "title": "Ronald Richards",
+            "content": "<p>ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.<\/p>"
+          }
+        },
+        "ef244d29-2592-4d2a-949d-65cfde7f419e": {
+          "type": "column",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/person-img-3.png",
+            "title": "Savannah Nguyen",
+            "content": "<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "be608de8-a107-467c-accd-689dc69276b3",
+        "2e75eec3-56e6-4207-86aa-b4cea9fe96ac",
+        "ef244d29-2592-4d2a-949d-65cfde7f419e"
+      ],
       "settings": {
-        "sub_title": "Collections",
-        "title": "Collections",
-        "button_text": "Collections",
-        "button_link": ""
+        "title": "Our Customer Feedback",
+        "sub_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       }
     }
   },
