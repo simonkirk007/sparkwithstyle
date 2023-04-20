@@ -81,9 +81,9 @@
         "a6bb1349-45c7-4d8d-9774-77cfe6ebf6ae"
       ],
       "settings": {
-        "title": "Collections",
-        "button_title": "Collections",
-        "button_link": ""
+        "title": "FEATURED COLLECTION",
+        "button_title": "View All",
+        "button_link": "shopify:\/\/collections\/all"
       }
     },
     "a6980ae8-59cf-42e1-bfc5-8b69fcafefc7": {
