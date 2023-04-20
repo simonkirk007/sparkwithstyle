@@ -69,7 +69,7 @@
         "a6bb1349-45c7-4d8d-9774-77cfe6ebf6ae": {
           "type": "column",
           "settings": {
-            "collection": "",
+            "collection": "frontpage",
             "title": "KURTI"
           }
         }
