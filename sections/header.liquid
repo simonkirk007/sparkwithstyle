@@ -230,6 +230,42 @@
           <a href="javascript:void(0)" class="header-main__categories">Browse All Categories<i
                   class='bx bxs-down-arrow'></i></a>
 
+                  {%- if section.settings.menu != blank -%}
+                  {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+                    
+                      <ul class="header-main__nav">
+                        {%- for link in section.settings.menu.links -%}
+                          <li {% if link.url contains page.url %}class="active"{% endif %}>
+                            <a class="" href="{{ link.url }}">{{ link.title | escape }} {% if link.links and link.links != blank %}
+                              <i class="fal fal fa-caret-down"></i> {% endif %}</a>
+                            {% if link.links and link.links != blank %}
+                             
+                              <ul class="sub-menu">
+                                {% for sublink in link.links %}
+                                  <li  {% if sublink.url contains page.url %}class="active"{% endif %}>
+                                    <a href="{{ sublink.url }}">{{ sublink.title | escape }} {% if sublink.links and sublink.links != blank %}
+                                      <i class="fal fa-caret-right"></i> {% endif %}</a>
+                                    {% if sublink.links and sublink.links != blank %}
+                              
+                                      <ul class="sub-menu sub-sub-menu">
+                                        {% for subsublink in sublink.links %}
+                                          <li {% if subsublink.url contains page.url %}class="active"{% endif %}>
+                                            <a href="{{ subsublink.url }}">{{ subsublink.title | escape }}</a>
+                                          </li>
+                                        {% endfor %}
+                                      </ul>
+                                    {% endif %}
+                                  </li>
+                                {% endfor %}
+                              </ul>
+                            {% endif %}
+                          </li>
+                        {%- endfor -%}                            
+                      </ul>
+                    
+                  {%- endif -%}
+                {%- endif -%}
+          
           <ul class="header-main__nav">
               <li><a href="index.php">Home</a></li>
               <li><a href="about-us.php">About</a></li>
