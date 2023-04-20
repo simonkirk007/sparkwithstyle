@@ -3,7 +3,6 @@
     "2d9a672c-a8b2-424c-84bc-492e63a601f0": {
       "type": "cus-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-bg.jpg",
         "sub_title": "Collections",
         "title": "Collections",
         "button_text": "Shop Now",
@@ -13,12 +12,10 @@
     "e8ce2c51-8b58-4e6f-be56-e5985b35d4c7": {
       "type": "cus-sub-banner",
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/sub-banner-bg-1.png",
         "sub_title_1": "Collections",
         "title_1": "Collections",
         "button_text_1": "Shop now",
         "button_link_1": "shopify:\/\/collections\/all",
-        "image_2": "shopify:\/\/shop_images\/sub-banner-bg-2.png",
         "sub_title_2": "Collections",
         "title_2": "Collections",
         "button_text_2": "Shop now",
@@ -35,7 +32,6 @@
     "7ac861c3-51bf-4807-8c4c-39c83cf0dfd7": {
       "type": "cus-about-sec",
       "settings": {
-        "image": "shopify:\/\/shop_images\/about-img-1.png",
         "sub_title": "Collections",
         "title": "Collections",
         "button_text": "Learn More",
@@ -69,7 +65,7 @@
         "a6bb1349-45c7-4d8d-9774-77cfe6ebf6ae": {
           "type": "column",
           "settings": {
-            "collection": "frontpage",
+            "collection": "kurtis",
             "title": "KURTI"
           }
         }
