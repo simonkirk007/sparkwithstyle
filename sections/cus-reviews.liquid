@@ -15,7 +15,7 @@
                 <div class='reviews-card'>
                     <div class="wrapper">
                         <div class="user-details">
-                            <img src='{{ block.settings.image | img_url: 'master' }}' alt='image' class='imgFluid user-details__img'
+                            <img src='{{ block.settings.image_1 | img_url: 'master' }}' alt='image' class='imgFluid user-details__img'
                                 loading='lazy'>
                             <div class="user-details__name">{{ block.settings.title }}</div>
                         </div>
@@ -61,13 +61,9 @@
       {
         "type": "column",
         "name": "t:sections.multicolumn.blocks.column.name",
-        "maxItems": 3,
+    
         "settings": [
-        {
-            "type": "img_url",
-            "id": "image",
-            "label": "Imageas"
-        },
+      
         {
             "type": "text",
             "id": "title",
