@@ -88,17 +88,6 @@
       "class": "announcement-bar-section",
       "settings": [
         {
-          "type": "image_picker",
-          "id": "image",
-          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
-        },
-        {
-          "type": "text",
-          "id": "sub_title",
-          "default": "Collections",
-          "label": "Sub Title"
-        },
-        {
           "type": "text",
           "id": "title",
           "default": "Collections",
@@ -106,15 +95,34 @@
         },
         {
           "type": "text",
-          "id": "button_text",
+          "id": "sub_title",
           "default": "Collections",
-          "label": "Button Text"
+          "label": "Sub Title"
+        }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "t:sections.multicolumn.blocks.column.name",
+        "maxItems": 3,
+        "settings": [
+        {
+            "type": "img_url",
+            "id": "image",
+            "label": "Imageas"
         },
         {
-            "type": "url",
-            "id": "button_link",
-            "label": "Button Link"
-          }
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content"
+        }
+        ]
+      }
     ],
     "presets": [
         {
