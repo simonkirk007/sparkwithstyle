@@ -8,14 +8,7 @@
 
 
 
-@font-face {
-  font-family: "Lemon Milk Regular";
-  src: url("../fonts/lemon-milk/LEMONMILK-Regular.otf");
-}
-@font-face {
-  font-family: "Lemon Milk Bold";
-  src: url("../fonts/lemon-milk/LEMONMILK-Bold.otf");
-}
+
 /* Root Styling */
 :root {
   --font-lemon-regular: "Lemon Milk Regular";
