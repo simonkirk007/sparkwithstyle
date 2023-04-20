@@ -1,0 +1,125 @@
+<div class='reviews mar-y'>
+    <div class='container'>
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-8">
+                <div class='section-content text-center'>
+                    <div class='heading'>Our Customer Feedback</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-lg-4'>
+                <div class='reviews-card'>
+                    <div class="wrapper">
+                        <div class="user-details">
+                            <img src='images/person-img-1.png' alt='image' class='imgFluid user-details__img'
+                                loading='lazy'>
+                            <div class="user-details__name">Floyd Miles</div>
+                        </div>
+                        <div class="reviews-card__rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                    </div>
+                    <div class='reviews-card__content'>
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit
+                        aliqua dolor do amet sint. Velit officia </div>
+                </div>
+            </div>
+            <div class='col-lg-4'>
+                <div class='reviews-card'>
+                    <div class="wrapper">
+                        <div class="user-details">
+                            <img src='images/person-img-2.png' alt='image' class='imgFluid user-details__img'
+                                loading='lazy'>
+                            <div class="user-details__name">Ronald Richards</div>
+                        </div>
+                        <div class="reviews-card__rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                    </div>
+                    <div class='reviews-card__content'>
+                        ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet. </div>
+                </div>
+            </div>
+            <div class='col-lg-4'>
+                <div class='reviews-card'>
+                    <div class="wrapper">
+                        <div class="user-details">
+                            <img src='images/person-img-3.png' alt='image' class='imgFluid user-details__img'
+                                loading='lazy'>
+                            <div class="user-details__name">Savannah Nguyen</div>
+                        </div>
+                        <div class="reviews-card__rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                    </div>
+                    <div class='reviews-card__content'>
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit
+                        aliqua dolor do amet sint. Velit officia </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+      "name": "Cus Reviews",
+      "tag": "section",
+      "class": "announcement-bar-section",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "sub_title",
+          "default": "Collections",
+          "label": "Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Collections",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "default": "Collections",
+          "label": "Button Text"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+          }
+    ],
+    "presets": [
+        {
+          "name": "Cus Reviews"
+        }
+      ]
+    }
+    {% endschema %}
