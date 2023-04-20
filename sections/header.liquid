@@ -151,7 +151,7 @@
   <div class="headerCenterWrapper">
       <div class="container">
           <div class="headerCenter">
-              <a href="index.php" class="imgFluid">
+              <a href="/" class="imgFluid">
                   {{ settings.logo | image_url: width: 600 | image_tag:
                     class: 'header__heading-logo motion-reduce',
                     widths: widths,
@@ -165,7 +165,7 @@
               </a>
                   <form action="{{ routes.search_url }}" method="get" role="search" class="search header__search">
                     <div class="field">
-                      <input class="search__input field__input"
+                      <input class="search__input"
                         id="Search-In-Modal-1"
                         type="search"
                         name="q"
@@ -184,14 +184,14 @@
                           spellcheck="false"
                         {%- endif -%}
                       >
-                      <label class="field__label" for="Search-In-Modal-1">{{ 'general.search.search' | t }}</label>
+                      
                       <input type="hidden" name="options[prefix]" value="last">
                       <button type="reset" class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}" aria-label="{{ 'general.search.reset' | t }}">
                         <svg class="icon icon-close" aria-hidden="true" focusable="false">
                           <use xlink:href="#icon-reset">
                         </svg>
                       </button>
-                      <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+                      <button class="search__button" aria-label="{{ 'general.search.search' | t }}">
                         <svg class="icon icon-search" aria-hidden="true" focusable="false">
                           <use href="#icon-search">
                         </svg>
