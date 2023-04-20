@@ -1,0 +1,82 @@
+<div class='about mar-y py-5'>
+    <div class='container p-0'>
+        <div class='row no-guttera'>
+            <div class='col-12 col-lg-7'>
+                <div class='about__img about__img--md'>
+                    <img src='{{ section.settings.image | img_url: 'master' }}' alt='image' class='imgFluid'>
+                </div>
+            </div>
+
+            <div class='col-12 col-lg-5'>
+                <div class='about__content about__content--box'>
+                    <div class='section-content'>
+                        <h3 class='heading'>About Us</h3>
+                        <p>Hello, Thank you for visiting my website.
+                        </p>
+                        <p>
+                            I am Susan Thomas, originally from Gujarat, India now residing in Orland Park, IL. Fashion
+                            is my passion, especially Indian outfits. I hold high values to modesty, traditional, but
+                            yet classy clothing.
+                        </p>
+                        <p>
+                            I live with a wonderful and supportive husband, who stands by me as I follow my heart and
+                            dreams. He makes my life so much fun and easy when I host live shows and events. I am not
+                            sure what I would do without him. I am a Mom to 2 amazing boys, who inspire me every day.
+                            They make sure I keep going and never give up. My youngest, Ethan, joins me on Facebook live
+                            shows and Aiden helps with lighting, sound and technology. My extended family are also heart
+                            of the business, cheering and rooting for me. For every occasion they chose Spark In Style
+                            collection and share pictures on Facebook. Spark In Style is incomplete without each one of
+                            them. I enjoy juggling between work, family, church and business. Life keeps me motivated
+                        </p>
+
+                        <a href="{{ section.settings.button_link }}" class="themeBtn mt-4">{{ section.settings.button_text }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+      "name": "Cus Abou Sec",
+      "tag": "section",
+      "class": "announcement-bar-section",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "sub_title",
+          "default": "Collections",
+          "label": "Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Collections",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "default": "Collections",
+          "label": "Button Text"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+          }
+    ],
+    "presets": [
+        {
+          "name": "Cus Abou Sec"
+        }
+      ]
+    }
+    {% endschema %}
