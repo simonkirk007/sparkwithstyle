@@ -25,7 +25,6 @@
             {% assign anotherVar = anotherVar | plus: 1 %}
             <div class="tab-pane fade" id="pills-{{ anotherVar }}" role="tabpanel" aria-labelledby="pills-{{ anotherVar }}-tab">
                 <div class='row'>
-
                     {% assign selected_collection = block.settings.collection %}
                     {% for product in collections[selected_collection].products limit: 4 %}
                         
