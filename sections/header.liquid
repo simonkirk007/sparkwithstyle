@@ -151,6 +151,62 @@
   endfor
 -%}
 
+
+<header class="header">
+  <div class="header-top">
+      <p>Free Standard Shipping On Orders $199 USD & Above</p>
+  </div>
+  <div class="headerCenterWrapper">
+      <div class="container">
+          <div class="headerCenter">
+              <a href="index.php" class="header-main__logo">
+                  <img src="images/logo.png" alt="Logo" class="imgFluid" />
+              </a>
+              <form action="#" class="header__search">
+                  <input type="search" placeholder="Search products">
+                  <button><i class="bx bx-search"></i></button>
+              </form>
+           
+              <ul class="header__actions">
+              
+                  <li>
+                      <a class="circle" href="cart.php"><i class="bx bx-cart"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="login.php"><i class="bx bx-user"></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="header-main">
+          <a href="javascript:void(0)" class="header-main__categories">Browse All Categories<i
+                  class='bx bxs-down-arrow'></i></a>
+
+          <ul class="header-main__nav">
+              <li><a href="index.php">Home</a></li>
+              <li><a href="about-us.php">About</a></li>
+              <li><a href="products.php">Women</a></li>
+              <li><a href="products.php">Mens</a></li>
+              <li><a href="products.php">For Girls</a></li>
+              <li><a href="contact-us.php">Contact Us</a></li>
+          </ul>
+          <ul class="social-media">
+              <li>
+                  <a href="#"><i class="bx bxl-facebook"></i></a>
+              </li>
+              <li>
+                  <a href="#"><i class="bx bxl-instagram"></i></a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</header>
+
+
 <{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}">
     {%- if section.settings.menu != blank -%}
