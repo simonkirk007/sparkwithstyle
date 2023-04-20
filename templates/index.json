@@ -24,10 +24,51 @@
         "button_text_2": "Shop now",
         "button_link_2": "shopify:\/\/collections\/all"
       }
+    },
+    "a1a427ef-c962-4148-9741-169cd1ef69a7": {
+      "type": "cus-products-sec",
+      "settings": {
+        "sub_title": "Collections",
+        "title": "Collections",
+        "button_text": "Collections",
+        "button_link": ""
+      }
+    },
+    "7ac861c3-51bf-4807-8c4c-39c83cf0dfd7": {
+      "type": "cus-about-sec",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about-img-1.png",
+        "sub_title": "Collections",
+        "title": "Collections",
+        "button_text": "Learn More",
+        "button_link": "#"
+      }
+    },
+    "976d88ac-c4a0-4819-bb31-acf2439fff0a": {
+      "type": "cus-product-tabs",
+      "settings": {
+        "sub_title": "Collections",
+        "title": "Collections",
+        "button_text": "Collections",
+        "button_link": ""
+      }
+    },
+    "a6980ae8-59cf-42e1-bfc5-8b69fcafefc7": {
+      "type": "cus-reviews",
+      "settings": {
+        "sub_title": "Collections",
+        "title": "Collections",
+        "button_text": "Collections",
+        "button_link": ""
+      }
     }
   },
   "order": [
     "2d9a672c-a8b2-424c-84bc-492e63a601f0",
-    "e8ce2c51-8b58-4e6f-be56-e5985b35d4c7"
+    "e8ce2c51-8b58-4e6f-be56-e5985b35d4c7",
+    "a1a427ef-c962-4148-9741-169cd1ef69a7",
+    "7ac861c3-51bf-4807-8c4c-39c83cf0dfd7",
+    "976d88ac-c4a0-4819-bb31-acf2439fff0a",
+    "a6980ae8-59cf-42e1-bfc5-8b69fcafefc7"
   ]
 }
