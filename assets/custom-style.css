@@ -16,3 +16,6 @@ form.search.header__search button.search__button {
     border-radius: 100px;
     top: 0px;
 }
+.varition-btn a {
+    display: block;
+}
