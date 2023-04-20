@@ -375,37 +375,45 @@
       "class": "announcement-bar-section",
       "settings": [
         {
-          "type": "image_picker",
-          "id": "image",
-          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
-        },
-        {
-          "type": "text",
-          "id": "sub_title",
-          "default": "Collections",
-          "label": "Sub Title"
-        },
-        {
           "type": "text",
           "id": "title",
           "default": "Collections",
           "label": "Title"
         },
         {
-          "type": "text",
-          "id": "button_text",
-          "default": "Collections",
-          "label": "Button Text"
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+        }
+    ], 
+    "blocks": [
+      {
+        "type": "column",
+        "name": "t:sections.multicolumn.blocks.column.name",
+        "settings": [
+        {
+            "type": "collection",
+            "id": "collection",
+            "label": "t:sections.featured-collection.settings.collection.label"
         },
         {
-            "type": "url",
-            "id": "button_link",
-            "label": "Button Link"
-          }
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        }
+        ]
+      }
     ],
     "presets": [
         {
-          "name": "Cus Product Tabs"
+          "name": "Cus Product Tabs",
+          "blocks": [
+          {
+            "type": "column"
+          }, {
+            "type": "column"
+          }
+        ]
         }
       ]
     }
