@@ -2,9 +2,14 @@ form.search.header__search .field input.search__input {
     border: 1px solid #808080;
     border-radius: 100px;
     margin: 0;
-  }
-  
-  form.search.header__search {
+    padding: 6px 15px;
+}
+
+form.search.header__search {
     padding: 0;
     border: unset !important;
-  }
+}
+
+form.search.header__search button.search__button {
+    background-color: var(--color-primary);
+}
