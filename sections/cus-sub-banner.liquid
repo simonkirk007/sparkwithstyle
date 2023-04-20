@@ -1,0 +1,98 @@
+<div class="subBannerWrapper">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-lg-8">
+                <div class="sub-banner">
+                    <img src='{{ section.settings.image_1 | img_url: 'master' }}' alt='image' class='imgFluid sub-banner__bg' loading='lazy'>
+                    <!-- <div class="sub-banner__tag">Lorem Ipsum</div> -->
+                    <div class="sub-banner__title">Lucknawi Kurti</div>
+                    <p>I love what I do. All dresses are carefully selected keeping my customers needs, latest trends
+                        and fashion in mind. I work directly with the manufacturers in India.</p>
+                    <a href="{{ section.settings.button_link_1 }}" class="themeBtn">{{ section.settings.button_text_1 }}</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="sub-banner sub-banner--dark">
+                    <img src='{{ section.settings.image_2 | img_url: 'master' }}' alt='image' class='imgFluid sub-banner__bg' loading='lazy'>
+                    <!-- <div class="sub-banner__tag">Lorem Ipsum</div> -->
+                    <div class="sub-banner__title">White Silk Palazzo Suit</div>
+                    <p>I am loving the process of working one on one with my clients. It brings me joy when I see the
+                        beautiful smile on their face that gets brighter in Spark In Style dresses.</p>
+                    <a href="{{ section.settings.button_link_2 }}" class="themeBtn">{{ section.settings.button_text_2 }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+      "name": "Cus Sub Banner",
+      "tag": "section",
+      "class": "announcement-bar-section",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "sub_title_1",
+          "default": "Collections",
+          "label": "Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "title_1",
+          "default": "Collections",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "button_text_1",
+          "default": "Collections",
+          "label": "Button Text"
+        },
+        {
+            "type": "url",
+            "id": "button_link_1",
+            "label": "Button Link"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "sub_title_2",
+          "default": "Collections",
+          "label": "Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "title_2",
+          "default": "Collections",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "button_text_2",
+          "default": "Collections",
+          "label": "Button Text"
+        },
+        {
+            "type": "url",
+            "id": "button_link_2",
+            "label": "Button Link"
+        }
+    ],
+    "presets": [
+        {
+          "name": "Cus Sub Banner"
+        }
+      ]
+    }
+    {% endschema %}
