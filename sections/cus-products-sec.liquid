@@ -23,28 +23,28 @@
                         <div class="price">{{ product.price | money }}</div>
                       
 
-          {% if product.options contains 'Color' %}
+{% if product.options contains 'Color' %}
   <ul class="product-colors">
     {% assign colors = '' | split: ',' %}
     {% for variant in product.variants %}
-      {% if variant.available %}
-        123
-        {% assign color = '' %}
-        {% for option in variant.options %}
-          {% if option contains 'Color' %}
-            {% assign color = option %}
-            {% unless colors contains color %}
-              {% assign colors = colors | join: ',' | append: color | split: ',' %}
-              <li class="product-color" style="background-color: {{ color | handleize }};">
-                <a href="{{ variant.url }}" title="{{ variant.title }}">{{ color }}</a>
-              </li>
-            {% endunless %}
-          {% endif %}
-        {% endfor %}
+      {% assign color = '' %}
+      {% for option in variant.options %}
+        {% if option contains 'Color' %}
+          {% assign color = option %}
+        {% endif %}
+      {% endfor %}
+      {% if variant.available and color != '' %}
+        {% unless colors contains color %}
+          {% assign colors = colors | join: ',' | append: color | split: ',' %}
+          <li class="product-color" style="background-color: {{ color | handleize }};">
+            <a href="{{ variant.url }}" title="{{ variant.title }}">{{ color }}</a>
+          </li>
+        {% endunless %}
       {% endif %}
     {% endfor %}
   </ul>
 {% endif %}
+
 
 
 
