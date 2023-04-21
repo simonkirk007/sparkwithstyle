@@ -100,3 +100,10 @@ form.search.header__search button.search__button {
 .product-count-vertical {
   display: none !important;
 }
+#SortBy:focus {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: unset !important;
+  border-radius: unset !important;
+  box-shadow: unset !important;
+}
