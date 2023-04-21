@@ -8,6 +8,38 @@
     },
     "da5c0772-65e9-4c1b-a67a-bbeda0b4355b": {
       "type": "cus-about-page",
+      "blocks": {
+        "69ce1f04-a019-43f5-a46d-b77e666c54b1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about-img-4.jpg"
+          }
+        },
+        "4ed4b6e9-f8bc-446c-984c-804de51738ef": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about-img-5.webp"
+          }
+        },
+        "a81e0284-f8bd-4f35-9525-aa8b2496cc94": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about-img-6.webp"
+          }
+        },
+        "1c5a30b8-7367-47c0-b4f4-9877412fbac0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about-img-7.webp"
+          }
+        }
+      },
+      "block_order": [
+        "69ce1f04-a019-43f5-a46d-b77e666c54b1",
+        "4ed4b6e9-f8bc-446c-984c-804de51738ef",
+        "a81e0284-f8bd-4f35-9525-aa8b2496cc94",
+        "1c5a30b8-7367-47c0-b4f4-9877412fbac0"
+      ],
       "settings": {
         "image_left": "shopify:\/\/shop_images\/about-img-11.png",
         "title": "About Us",
