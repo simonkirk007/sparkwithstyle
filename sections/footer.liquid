@@ -26,7 +26,7 @@
                     {%- if section.settings.menu_type_desktop == 'dropdown' -%}
                     
                       <ul>
-                        {%- for link in section.settings.menu.links -%}
+                        {%- for link in section.settings.menu_1.links -%}
                           <li {% if link.url contains page.url %}class="active"{% endif %}>
                             <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
                           </li>
@@ -50,7 +50,7 @@
                     {%- if section.settings.menu_type_desktop == 'dropdown' -%}
                     
                       <ul>
-                        {%- for link in section.settings.menu.links -%}
+                        {%- for link in section.settings.menu_2.links -%}
                           <li {% if link.url contains page.url %}class="active"{% endif %}>
                             <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
                           </li>
@@ -74,7 +74,7 @@
                     {%- if section.settings.menu_type_desktop == 'dropdown' -%}
                     
                       <ul>
-                        {%- for link in section.settings.menu.links -%}
+                        {%- for link in section.settings.menu_3.links -%}
                           <li {% if link.url contains page.url %}class="active"{% endif %}>
                             <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
                           </li>
@@ -208,6 +208,27 @@
     }
   ],
   "settings": [
+    {
+      "type": "link_list",
+      "id": "menu_1",
+      "default": "footer",
+      "label": "t:sections.footer.blocks.link_list.settings.menu.label",
+      "info": "t:sections.footer.blocks.link_list.settings.menu.info"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_2",
+      "default": "footer",
+      "label": "t:sections.footer.blocks.link_list.settings.menu.label",
+      "info": "t:sections.footer.blocks.link_list.settings.menu.info"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_3",
+      "default": "footer",
+      "label": "t:sections.footer.blocks.link_list.settings.menu.label",
+      "info": "t:sections.footer.blocks.link_list.settings.menu.info"
+    },
     {
       "type": "text",
       "id": "menu_1_title",
