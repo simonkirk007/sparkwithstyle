@@ -1,3 +1,6 @@
+html {
+    padding: 0 !important;
+}
 form.search.header__search .field input.search__input {
     border: 1px solid #808080;
     border-radius: 100px;
