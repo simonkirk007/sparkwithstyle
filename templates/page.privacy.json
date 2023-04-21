@@ -3,10 +3,21 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "page_title": ""
+      }
+    },
+    "aacf30ba-7294-4fee-97bb-f1b0df735018": {
+      "type": "cus-privacy",
+      "settings": {
+        "sub_title": "Collections",
+        "title": "Collections",
+        "button_text": "Collections",
+        "button_link": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "aacf30ba-7294-4fee-97bb-f1b0df735018"
   ]
 }
