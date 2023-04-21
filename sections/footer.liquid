@@ -22,20 +22,20 @@
             <div class="col-lg-3 offset-lg-1">
                 <div class="footer__quickLinks">
                     <div class="title">Quick Links</div>
-                    {%- if section.settings.menu_1 != blank -%}
-                    {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+
+                    {%- if section.settings.menu_1 -%}
+                        {% assign linklist = section.settings.footer_menu | linklist %}
+                          {% if linklist.links.size > 0 %}
                     
                       <ul>
-                        {%- for link in section.settings.menu_1.links -%}
-                          <li {% if link.url contains page.url %}class="active"{% endif %}>
-                            <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
-                          </li>
-                        {%- endfor -%}                            
+                        {% for link in linklist.links %}
+                          <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+                        {%- endfor -%}                           
                       </ul>
-                    
+                      
+                    {% endif %}
                   {%- endif -%}
-                {%- endif -%}
-                    <ul>
+                      <ul>
                         <li><a href="index.php"> Home</a></li>
                         <li><a href="about-us.php"> About Us</a></li>
                         <li><a href="contact-us.php"> Contact Us</a></li>
