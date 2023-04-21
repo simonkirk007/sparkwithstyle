@@ -61,8 +61,8 @@
     >
     
     {% if option.name == 'Color' %}
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="product-variant-color product-variant-color-{{ value | handleize }}" style="background-color: {{ value | handleize }};" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-      {{ value -}}
+    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="product-variant-color product-variant-color-{{ value | handleize }}" style="background-color: {{ value | handleize }};" data-toggle="tooltip" data-placement="top" title="{{ value -}}">
+      
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
     
