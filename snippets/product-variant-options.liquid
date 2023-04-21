@@ -59,8 +59,9 @@
         class="disabled"
       {% endif %}
     >
-    <label for="template--18789486821697__main-2-1">
-      White<span class="visually-hidden">Variant sold out or unavailable</span>
+    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="product-variant-color product-variant-color-{{ value | handleize }}" style="background-color: {{ value | handleize }};">
+      {{ value -}}
+      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
     <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
       {{ value -}}
