@@ -143,3 +143,6 @@ form.search.header__search button.search__button {
 .products-detail__content{
   padding: 0;
 }
+.product__info-container .product-form {
+    margin: 0;
+}
