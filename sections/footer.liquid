@@ -46,7 +46,7 @@
                 <div class="footer__quickLinks">
                     <div class="title">Other Links</div>
                     
-                    {%- if section.settings.menu_2 -%}
+                    {%- if section.settings.footer_menu_2 -%}
                         {% assign linklist = section.settings.footer_menu | linklist %}
                           {% if linklist.links.size > 0 %}
                     
@@ -59,12 +59,7 @@
                     {% endif %}
                   {%- endif -%}
                 
-                    <ul>
-                        <li><a href="/pages/privacy-policy">privacy Policy</a></li>
-                        <li><a href="/pages/terms-of-service">Term And Services</a></li>
-                        <li><a href="/pages/refund-policy">Refund Policy</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                    </ul>
+                  
                 </div>
             </div>
             <div class="col-lg-3">
