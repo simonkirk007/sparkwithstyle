@@ -28,6 +28,7 @@
     {% assign colors = '' | split: ',' %}
     {% for variant in product.variants %}
       {% if variant.available %}
+        123
         {% assign color = '' %}
         {% for option in variant.options %}
           {% if option contains 'Color' %}
