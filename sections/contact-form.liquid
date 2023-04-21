@@ -44,6 +44,14 @@
                       placeholder="{{ 'templates.contact.form.name' | t }}"
                     >
                   </div>
+                  <div class="contact-form__fields">
+                    <select class="field__input" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]">
+                      <option value="">Please select</option>
+                      <option value="option1" {% if form.name == 'option1' %}selected{% endif %}>Option 1</option>
+                      <option value="option2" {% if form.name == 'option2' %}selected{% endif %}>Option 2</option>
+                      <option value="option3" {% if form.name == 'option3' %}selected{% endif %}>Option 3</option>
+                    </select>
+                  </div>
                   <div class="contact-form__fields field--with-error">
                     <input
                       autocomplete="email"
