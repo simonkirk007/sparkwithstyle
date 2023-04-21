@@ -107,3 +107,33 @@ form.search.header__search button.search__button {
   border-radius: unset !important;
   box-shadow: unset !important;
 }
+.product__info-wrapper .product__title h1 {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--font-lemon-regular);
+}
+
+.product__info-wrapper .price {
+    color: var(--color-secondary);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: -10px;
+    letter-spacing: 0;
+}
+
+.product__info-wrapper .product__description {
+    margin-top: 15px;
+}
+
+.product__info-wrapper .product-form__input input[type=radio]+label {
+    padding: 10px 30px;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.product__info-wrapper .product-form__input .quantity {
+    min-height: 45px;
+}
