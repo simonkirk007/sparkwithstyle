@@ -50,7 +50,7 @@ form.search.header__search button.search__button {
 
   .field__input:focus, .select__select:focus, .customer .field input:focus, .customer select:focus, .localization-form__select:focus.localization-form__select::after{
     padding: 0.85rem 1.25rem !important;
-    margin: 0 !important;
+    margin: 0.75rem 0 !important;
     border: 1px solid #000;
     border-radius: 0.5rem;
     box-shadow: unset;
