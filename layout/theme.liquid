@@ -39,7 +39,7 @@
     <script src="{{ 'slick.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'fancybox.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'app.js' | asset_url }}" defer="defer"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
     <script>
         
@@ -317,6 +317,8 @@
         pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
       }
+
+
     </script>
 
     {%- if settings.predictive_search_enabled -%}
