@@ -1,6 +1,17 @@
 // Initialize Wow
 new WOW().init();
 
+$(document).ready(function() {
+  // Your JavaScript code goes here
+
+         $(function () {
+          $('[data-toggle="tooltip"]').tooltip();
+        })
+
+        
+});
+
+
 $(".cus-product-tabs .custom-tabs li:first-child a").addClass("active");
 $(".cus-product-tabs .tab-content .tab-pane:first-child").addClass("show active");
 
