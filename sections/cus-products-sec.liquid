@@ -21,7 +21,31 @@
                         <div class="title"><a href="{{ product.url }}">{{ product.title }}</a></div>
 
                         <div class="price">{{ product.price | money }}</div>
+                      
+                        {% if product.options contains 'Color' %}
+                          <ul class="product-colors">
+                            {% for variant in product.variants %}
+                              {% if variant.available %}
+                                {% assign color_index = 0 %}
+                                {% for option in product.options %}
+                                  {% if option == 'Color' %}
+                                    {% assign color_index = forloop.index0 %}
+                                  {% endif %}
+                                {% endfor %}
+                                {% assign color = variant.options[color_index] %}
+                                {% if color %}
+                                  <li class="product-color" style="background-color: {{ color | handleize }};">
+                                    <a href="{{ variant.url }}" title="{{ variant.title }}">{{ color }}</a>
+                                  </li>
+                                {% endif %}
+                              {% endif %}
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
 
+
+
+                      
                         <div class="d-flex justify-content-center m-0 mb-3 varition-btn">
                             <a href="#" style="background-color: #FAB528;"></a>
                             <a href="#" style="background-color: #FC043A;"></a>
