@@ -3,20 +3,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
+        "title": {
+          "type": "title",
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
           }
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
-        },
-        "title": {
-          "type": "title",
           "settings": {
           }
         },
@@ -45,9 +38,8 @@
         }
       },
       "block_order": [
-        "vendor",
-        "price",
         "title",
+        "price",
         "description",
         "variant_picker",
         "quantity_selector",
