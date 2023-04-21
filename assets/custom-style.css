@@ -190,3 +190,6 @@ form#create_customer label {
 #customer_login button.themeBtn.themeBtn--full.justify-content-center:hover {
     background-color: #fff;
 }
+#customer_login input {
+    font-size: 18px;
+}
