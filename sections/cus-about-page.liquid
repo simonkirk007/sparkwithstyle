@@ -50,7 +50,7 @@
             
            <div class='col-12 col-lg-12'>
                 <div class='about__img about__img--md'>
-                    <img src='{{ section.settings.main_image }}' alt='image' class='imgFluid'>
+                    <img src='{{ section.settings.main_image | img_url: 'master' }}' alt='image' class='imgFluid'>
                 </div>
             </div>
             
