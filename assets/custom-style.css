@@ -146,3 +146,8 @@ form.search.header__search button.search__button {
 .product__info-container .product-form {
     margin: 0;
 }
+.product-variant-color {
+    height: 40px;
+    width: 40px !important;
+    padding: 0 !important;
+}
