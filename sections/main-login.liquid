@@ -25,7 +25,7 @@
 
     {%- form 'recover_customer_password' -%}
       {% assign recover_success = form.posted_successfully? %}
-      <div class="col-lg-12">
+      <div class="col-lg-12 contact-form__fields">
         <input
           type="email"
           value=""
@@ -95,7 +95,7 @@
         {{ form.errors | default_errors }}
       {%- endif -%}
 
-      <div class="col-lg-12">
+      <div class="col-lg-12 contact-form__fields">
         <input
           type="email"
           name="customer[email]"
