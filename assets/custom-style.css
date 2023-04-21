@@ -133,7 +133,9 @@ form.search.header__search button.search__button {
     margin-top: 0;
     margin-bottom: 0;
 }
-
+.product__info-wrapper fieldset.product-form__input .form__label {
+    font-size: 18px;
+}
 .product__info-wrapper .product-form__input .quantity {
     min-height: 45px;
 }
