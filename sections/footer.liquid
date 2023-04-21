@@ -47,19 +47,18 @@
                 <div class="footer__quickLinks">
                     <div class="title">Other Links</div>
                     
-                    {%- if section.settings.menu_2 != blank -%}
-                    {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+                    {%- if section.settings.menu_1 -%}
+                        {% assign linklist = section.settings.footer_menu | linklist %}
+                          {% if linklist.links.size > 0 %}
                     
                       <ul>
-                        {%- for link in section.settings.menu_2.links -%}
-                          <li {% if link.url contains page.url %}class="active"{% endif %}>
-                            <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
-                          </li>
-                        {%- endfor -%}                            
+                        {% for link in linklist.links %}
+                          <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+                        {%- endfor -%}                           
                       </ul>
-                    
+                      
+                    {% endif %}
                   {%- endif -%}
-                {%- endif -%}
                 
                     <ul>
                         <li><a href="privacy-policy.php">privacy Policy</a></li>
