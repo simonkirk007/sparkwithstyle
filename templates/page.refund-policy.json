@@ -3,10 +3,21 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "page_title": ""
+      }
+    },
+    "692d2405-1452-452e-8ed6-e354b3c0c649": {
+      "type": "cus-refund",
+      "settings": {
+        "sub_title": "Collections",
+        "title": "Collections",
+        "button_text": "Collections",
+        "button_link": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "692d2405-1452-452e-8ed6-e354b3c0c649"
   ]
 }
