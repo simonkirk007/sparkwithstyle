@@ -98,73 +98,79 @@
       </facet-filters-form>
     {%- endif -%}
 
-    <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical container{% endif %}">
+    <div class="{% if section.settings.filter_type == 'vertical' %}container{% endif %}">
+      <div class="row">
       
-      {{ 'component-facets.css' | asset_url | stylesheet_tag }}
-      <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
-      {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
-        <aside
-          aria-labelledby="verticalTitle"
-          class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
-          id="main-collection-filters"
-          data-id="{{ section.id }}"
-        >
-          {% render 'facets',
-            results: collection,
-            enable_filtering: section.settings.enable_filtering,
-            enable_sorting: section.settings.enable_sorting,
-            filter_type: section.settings.filter_type,
-            paginate: paginate
-          %}
-        </aside>
-      {%- endif -%}
+      
+        <div class="col-12 col-lg-3">
+          {{ 'component-facets.css' | asset_url | stylesheet_tag }}
+          <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
+          {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
+            <aside
+              aria-labelledby="verticalTitle"
+              class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
+              id="main-collection-filters"
+              data-id="{{ section.id }}"
+            >
+              {% render 'facets',
+                results: collection,
+                enable_filtering: section.settings.enable_filtering,
+                enable_sorting: section.settings.enable_sorting,
+                filter_type: section.settings.filter_type,
+                paginate: paginate
+              %}
+            </aside>
+          {%- endif -%}
+        </div>
 
-      <div class="product-grid-container" id="ProductGridContainer">
-        {%- if collection.products.size == 0 -%}
-          <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
-            <div class="loading-overlay gradient"></div>
-            <div class="title-wrapper center">
-              <h2 class="title title--primary">
-                {{ 'sections.collection_template.empty' | t -}}
-                <br>
-                {{
-                  'sections.collection_template.use_fewer_filters_html'
-                  | t: link: collection.url, class: 'underlined-link link'
-                }}
-              </h2>
-            </div>
-          </div>
-        {%- else -%}
-          <div class="">
-            <div class="loading-overlay gradient"></div>
-
-            <div id="product-grid" data-id="{{ section.id }}" class="row">
-              {%- for product in collection.products -%}
-                {% assign lazy_load = false %}
-                {%- if forloop.index > 2 -%}
-                  {%- assign lazy_load = true -%}
-                {%- endif -%}
-                <div class="col-lg-4">
-                  {% render 'card-product',
-                    card_product: product,
-                    media_aspect_ratio: section.settings.image_ratio,
-                    show_secondary_image: section.settings.show_secondary_image,
-                    show_vendor: section.settings.show_vendor,
-                    show_rating: section.settings.show_rating,
-                    lazy_load: lazy_load,
-                    show_quick_add: section.settings.enable_quick_add,
-                    section_id: section.id
-                  %}
+        <div class="col-12 col-lg-9">
+          <div class="product-grid-container" id="ProductGridContainer">
+            {%- if collection.products.size == 0 -%}
+              <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
+                <div class="loading-overlay gradient"></div>
+                <div class="title-wrapper center">
+                  <h2 class="title title--primary">
+                    {{ 'sections.collection_template.empty' | t -}}
+                    <br>
+                    {{
+                      'sections.collection_template.use_fewer_filters_html'
+                      | t: link: collection.url, class: 'underlined-link link'
+                    }}
+                  </h2>
                 </div>
-              {%- endfor -%}
-            </div>
-
-            {%- if paginate.pages > 1 -%}
-              {% render 'pagination', paginate: paginate, anchor: '' %}
+              </div>
+            {%- else -%}
+              <div class="">
+                <div class="loading-overlay gradient"></div>
+                <div id="product-grid" data-id="{{ section.id }}" class="row">
+                  {%- for product in collection.products -%}
+                    {% assign lazy_load = false %}
+                    {%- if forloop.index > 2 -%}
+                      {%- assign lazy_load = true -%}
+                    {%- endif -%}
+                    <div class="col-lg-4">
+                      {% render 'card-product',
+                        card_product: product,
+                        media_aspect_ratio: section.settings.image_ratio,
+                        show_secondary_image: section.settings.show_secondary_image,
+                        show_vendor: section.settings.show_vendor,
+                        show_rating: section.settings.show_rating,
+                        lazy_load: lazy_load,
+                        show_quick_add: section.settings.enable_quick_add,
+                        section_id: section.id
+                      %}
+                    </div>
+                  {%- endfor -%}
+                </div>
+                {%- if paginate.pages > 1 -%}
+                  {% render 'pagination', paginate: paginate, anchor: '' %}
+                {%- endif -%}
+              </div>
             {%- endif -%}
           </div>
-        {%- endif -%}
-      </div>
+        </div>
+      
+    </div>
     </div>
   {%- endpaginate -%}
 </div>
