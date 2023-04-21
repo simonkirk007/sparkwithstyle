@@ -14,6 +14,18 @@
                 <div class="footer__quickLinks">
                     <div class="title">Quick Links</div>
 
+                  {%- assign footer_menu = section.settings.footer_menu -%}
+{%- if footer_menu != blank -%}
+  {% assign linklist = footer_menu | linklist %}
+  {% if linklist.links.size > 0 %}
+    <ul>
+      {% for link in linklist.links %}
+        <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{%- endif -%}
+
                     {%- if section.settings.menu_one -%}
                         {% assign linklist = section.settings.footer_menu | linklist %}
                       123
@@ -116,7 +128,7 @@
       },
       {
         "type": "link_list",
-        "id": "menu_one",
+        "id": "footer_menu",
         "default": "main-menu",
         "label": "Menu 1"
       },
