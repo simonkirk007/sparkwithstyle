@@ -37,3 +37,12 @@ form.search.header__search button.search__button {
     width: auto;
     padding: 0px 35px;
 }
+
+.field__input::placeholder, .customer .field input::placeholder {
+    opacity: 1 !important;
+    font-size: 14px !important;
+}
+
+.contact-form__fields :is(input, textarea, select){
+    height: auto;
+  }
