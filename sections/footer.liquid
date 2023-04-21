@@ -1,13 +1,3 @@
-{% comment %}theme-check-disable UndefinedObject{% endcomment %}
-{{ 'section-footer.css' | asset_url | stylesheet_tag }}
-{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
-{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}
-{{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
-{{ 'component-list-social.css' | asset_url | stylesheet_tag }}
-{%- if section.settings.enable_country_selector or section.settings.enable_language_selector -%}
-  {{ 'component-localization-form.css' | asset_url | stylesheet_tag }}
-{%- endif -%}
-
 <footer class="footer">
     <div class="container">
         <div class="row">
