@@ -1,12 +1,146 @@
+<div class='about mar-y py-5'>
+    <div class='container p-0'>
+        <div class='row no-guttera'>
+            <div class='col-12 col-lg-6'>
+                <div class='about__img about__img--md'>
+                    <img src='{{ section.settings.image_left | img_url: 'master' }}' alt='image' class='imgFluid'>
+                </div>
+            </div>
+
+            <div class='col-12 col-lg-6'>
+                <div class='about__content '>
+                    <div class='section-content'>
+                        <h3 class='heading'>{{ section.settings.title }}</h3>
+                        {{ section.settings.content_right }}
+                    </div>
+                </div>
+            </div>
+            
+                   <div class='col-12 col-lg-12 my-4'>
+                <div class='about__content '>
+                    <div class='section-content'>
+                    {{ section.settings.content_Bottom }}
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class='col-12  col-lg-6 mt-4'>
+                <div class='about__content '>
+                    <div class='section-content'>
+                        {{ section.settings.content_left }}
+                    </div>
+                </div>
+            </div>
+            <div class='col-12 col-lg-6 mt-4'>
+                <div class='about__img about__img--md'>
+                    <img src='{{ section.settings.image_right | img_url: 'master' }}' alt='image' class='imgFluid'>
+                </div>
+            </div>
+            
+            
+            <div class='col-12 col-lg-12'>
+                <div class='about__content my-5'>
+                    <div class='section-content text-center'>
+                        <h3 class='heading'>{{ section.settings.gallery_title }}</h3>
+
+                    </div>
+                </div>
+            </div>
+            
+           <div class='col-12 col-lg-12'>
+                <div class='about__img about__img--md'>
+                    <img src='{{ section.settings.main_image | img_url: 'master' }}' alt='image' class='imgFluid'>
+                </div>
+            </div>
+            
+            {%- for block in section.blocks -%}
+             <div class='col-12 col-lg-6'>
+                <div class='about__img about__img--md mt-4'>
+                    <img src='{{ block.settings.image | img_url: 'master' }}' alt='image' class='imgFluid'>
+                </div>
+            </div>
+            {% endfor %}
+            
+             
+            
+            
+        </div>
+    </div>
+</div>
+
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+    {
+      "name": "Cus About Page",
+      "tag": "section",
+      "class": "announcement-bar-section",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_left",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "default": "Collections",
+          "label": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "content_right",
+            "default": "<p>Collection</p>",
+            "label": "Content Right"
+        },
+       
+        {
+            "type": "richtext",
+            "id": "content_Bottom",
+          "default": "<p>Collection</p>",
+          "label": "Content Bottom"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_right",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "richtext",
+          "id": "content_left",
+          "default": "<p>Collection</p>",
+          "label": "Content Left"
+        },
+        {
+            "type": "text",
+            "id": "gallery_title",
+            "default": "Collections",
+          "label": "Gallery Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "main_image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "t:sections.multicolumn.blocks.column.name",
+    
+        "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        }
+        ]
+      }
+    ],
+    "presets": [
+        {
+          "name": "Cus About Page"
+        }
+      ]
+    }
+    {% endschema %}
