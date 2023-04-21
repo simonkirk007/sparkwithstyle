@@ -5,19 +5,18 @@
     "footer": {
       "type": "footer",
       "settings": {
-        "color_scheme": "background-1",
         "footer_logo": "shopify:\/\/shop_images\/footer-logo.png",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
-        "show_social": true,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": true,
-        "show_policy": false,
-        "margin_top": 36,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "content": "<p>Collections<\/p>",
+        "menu_title": "Collections",
+        "menu_1": "footer-info",
+        "quick_title": "Collections",
+        "quick_address": "Collections",
+        "quick_address_link": "",
+        "quick_phone": "Collections",
+        "quick_email": "Collections",
+        "subs_title": "Collections",
+        "subs_content": "Collections",
+        "copy_text": "<p>Collections<\/p>"
       }
     }
   },
