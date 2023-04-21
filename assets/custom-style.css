@@ -86,3 +86,17 @@ form.search.header__search button.search__button {
   padding: 0;
   background-color: unset;
 }
+
+#ProductGridContainer .collection {
+  padding: 0;
+  background-color: unset;
+}
+.facet-filters__sort {
+  font-size: 18px !important;
+}
+.facet-filters__label  label {
+  font-size: 17px !important;
+}
+.product-count-vertical {
+  display: none !important;
+}
