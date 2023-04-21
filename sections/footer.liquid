@@ -55,19 +55,18 @@
                 <div class="footer__quickLinks">
                     <div class="title">Contact Info</div>
                   
-                    {%- if section.settings.footer_menu_2 != blank -%}
-                    {%- if section.settings.menu_type_desktop == 'dropdown' -%}
-                    
-                      <ul>
-                        {%- for link in section.settings.menu_3.links -%}
-                          <li {% if link.url contains page.url %}class="active"{% endif %}>
-                            <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
-                          </li>
-                        {%- endfor -%}                            
-                      </ul>
-                    
-                  {%- endif -%}
-                {%- endif -%}
+                    {%- assign footer_menu_3 = section.settings.footer_menu_3 -%}
+{%- if footer_menu_3 != blank -%}
+  {% assign linklist = footer_menu_3 | linklist %}
+  {% if linklist.links.size > 0 %}
+    <ul>
+      {% for link in linklist.links %}
+        <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{%- endif -%}
+
                     <ul>
                         <li><a href="tel:31279994069"> (312) 799-94069</a></li>
                         <li><a href="mailto:sparkinstyle@gmai.com"> sparkinstyle@gmail.com</a></li>
