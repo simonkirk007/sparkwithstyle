@@ -1,3 +1,16 @@
+<div class="page-title">
+    <div class="page-title__img">
+        <img src="{% if section.settings.banner_img != blank %} {{ section.settings.banner_img | img_url: 'master' }} {% else %}{{ 'about-banner.png' | asset_url }}{% endif %}" alt="image" class="imgFluid">
+    </div>
+    <div class="page-title__content">
+        <h2 class="heading box-text">
+          {% if section.settings.page_title != blank %}
+            <h2 class="heading box-text">{{ section.settings.page_title }}</h2>
+          {% else %}
+            <h2 class="heading box-text">{{ page.title | escape }}</h2>
+          {% endif %}
+    </div>
+</div>
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
