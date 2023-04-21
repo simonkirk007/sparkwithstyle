@@ -22,6 +22,19 @@
             <div class="col-lg-3 offset-lg-1">
                 <div class="footer__quickLinks">
                     <div class="title">Quick Links</div>
+                    {%- if section.settings.menu_1 != blank -%}
+                    {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+                    
+                      <ul>
+                        {%- for link in section.settings.menu.links -%}
+                          <li {% if link.url contains page.url %}class="active"{% endif %}>
+                            <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
+                          </li>
+                        {%- endfor -%}                            
+                      </ul>
+                    
+                  {%- endif -%}
+                {%- endif -%}
                     <ul>
                         <li><a href="index.php"> Home</a></li>
                         <li><a href="about-us.php"> About Us</a></li>
@@ -33,6 +46,19 @@
             <div class="col-lg-2">
                 <div class="footer__quickLinks">
                     <div class="title">Other Links</div>
+                    {%- if section.settings.menu_2 != blank -%}
+                    {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+                    
+                      <ul>
+                        {%- for link in section.settings.menu.links -%}
+                          <li {% if link.url contains page.url %}class="active"{% endif %}>
+                            <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
+                          </li>
+                        {%- endfor -%}                            
+                      </ul>
+                    
+                  {%- endif -%}
+                {%- endif -%}
                     <ul>
                         <li><a href="privacy-policy.php">privacy Policy</a></li>
                         <li><a href="term-and-services.php">Term And Services</a></li>
@@ -44,6 +70,19 @@
             <div class="col-lg-3">
                 <div class="footer__quickLinks">
                     <div class="title">Contact Info</div>
+                    {%- if section.settings.menu_2 != blank -%}
+                    {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+                    
+                      <ul>
+                        {%- for link in section.settings.menu.links -%}
+                          <li {% if link.url contains page.url %}class="active"{% endif %}>
+                            <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
+                          </li>
+                        {%- endfor -%}                            
+                      </ul>
+                    
+                  {%- endif -%}
+                {%- endif -%}
                     <ul>
                         <li><a href="tel:31279994069"> (312) 799-94069</a></li>
                         <li><a href="mailto:sparkinstyle@gmai.com"> sparkinstyle@gmail.com</a></li>
@@ -169,6 +208,36 @@
     }
   ],
   "settings": [
+    {
+      "type": "text",
+      "id": "menu_1_title",
+      "label": "Menu 1 Title"
+    },
+    {
+      "type": "menu",
+      "id": "menu_1",
+      "label": "Menu 1"
+    },
+    {
+      "type": "text",
+      "id": "menu_2_title",
+      "label": "Menu 2 Title"
+    },
+    {
+      "type": "menu",
+      "id": "menu_2",
+      "label": "Menu 2"
+    },
+    {
+      "type": "text",
+      "id": "menu_3_title",
+      "label": "Menu 3 Title"
+    },
+    {
+      "type": "menu",
+      "id": "menu_3",
+      "label": "Menu 3"
+    },
     {
       "type": "select",
       "id": "color_scheme",
