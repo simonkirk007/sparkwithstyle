@@ -26,38 +26,27 @@
   {% endif %}
 {%- endif -%}
 
-                    {%- if section.settings.menu_one -%}
-                        {% assign linklist = section.settings.footer_menu | linklist %}
-                      123
-                          {% if linklist.links.size > 0 %}
-                    
-                      <ul>
-                        {% for link in linklist.links %}
-                          <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
-                        {%- endfor -%}                           
-                      </ul>
-                      
-                    {% endif %}
-                  {%- endif -%}
+            
                      
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="footer__quickLinks">
                     <div class="title">Other Links</div>
-                    
-                    {%- if section.settings.footer_menu_2 -%}
-                        {% assign linklist = section.settings.footer_menu | linklist %}
-                          {% if linklist.links.size > 0 %}
-                    
-                      <ul>
-                        {% for link in linklist.links %}
-                          <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
-                        {%- endfor -%}                           
-                      </ul>
-                      
-                    {% endif %}
-                  {%- endif -%}
+
+                   {%- assign footer_menu_2 = section.settings.footer_menu_2 -%}
+{%- if footer_menu_2 != blank -%}
+  {% assign linklist = footer_menu_2 | linklist %}
+  {% if linklist.links.size > 0 %}
+    <ul>
+      {% for link in linklist.links %}
+        <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{%- endif -%}
+
+                   
                 
                   
                 </div>
@@ -66,7 +55,7 @@
                 <div class="footer__quickLinks">
                     <div class="title">Contact Info</div>
                   
-                    {%- if section.settings.menu_3 != blank -%}
+                    {%- if section.settings.footer_menu_2 != blank -%}
                     {%- if section.settings.menu_type_desktop == 'dropdown' -%}
                     
                       <ul>
