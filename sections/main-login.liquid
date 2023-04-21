@@ -79,7 +79,7 @@
         {{ 'customer.recover_password.success' | t }}
       </h3>
     {%- endif -%}
-    <div class="row">
+    
     {%- form 'customer_login', novalidate: 'novalidate' -%}
       {%- if form.errors -%}
         <h2 class="form__message" tabindex="-1" autofocus>
@@ -94,7 +94,7 @@
         </h2>
         {{ form.errors | default_errors }}
       {%- endif -%}
-
+<div class="row">
       <div class="col-lg-12 contact-form__fields">
         <input
           type="email"
@@ -126,7 +126,7 @@
           >
         
         </div>
-
+</div>
         <a href="#recover">
           {{ 'customer.login_page.forgot_password' | t }}
         </a>
@@ -140,7 +140,7 @@
         {{ 'customer.login_page.create_account' | t }}
       </a>
     {%- endform -%}
-    </div>
+    
   </div>
 
   {%- if shop.checkout.guest_login -%}
