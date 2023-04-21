@@ -50,7 +50,7 @@
                     {%- if section.settings.menu_2 -%}
                         {% assign linklist = section.settings.footer_menu | linklist %}
                           {% if linklist.links.size > 0 %}
-                    12
+                    
                       <ul>
                         {% for link in linklist.links %}
                           <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
