@@ -57,6 +57,7 @@ form.search.header__search button.search__button {
     box-shadow: unset;
   }
 
-  .facets__form-vertical, .facets__form-vertical {
-    width: auto;
+  .facets__form-vertical, 
+ .facets__form-vertical {
+    width: auto !important;
   }
