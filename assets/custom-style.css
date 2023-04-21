@@ -140,3 +140,6 @@ form.search.header__search button.search__button {
 .product__info-wrapper .product-form__input .quantity {
     min-height: 45px;
 }
+.products-detail__content{
+  padding: 0;
+}
