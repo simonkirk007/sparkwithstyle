@@ -51,7 +51,7 @@
                     >
                       {{ option.name | escape }}
                     </option>
-                    
+
                   {%- endfor -%}
                 </select>
                 {% render 'icon-caret' %}
@@ -137,20 +137,13 @@
           <div class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}">
             <div class="loading-overlay gradient"></div>
 
-            <ul
-              id="product-grid"
-              data-id="{{ section.id }}"
-              class="
-                grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
-                grid--{{ section.settings.columns_desktop }}-col-desktop
-              "
-            >
+            <div id="product-grid" data-id="{{ section.id }}" class="row">
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                <li class="grid__item">
+                <div class="col-lg-4">
                   {% render 'card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
@@ -161,9 +154,9 @@
                     show_quick_add: section.settings.enable_quick_add,
                     section_id: section.id
                   %}
-                </li>
+                </div>
               {%- endfor -%}
-            </ul>
+            </div>
 
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}
