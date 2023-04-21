@@ -36,29 +36,30 @@
                     {% endif %}
                   {%- endif -%}
                       <ul>
-                        <li><a href="index.php"> Home</a></li>
-                        <li><a href="about-us.php"> About Us</a></li>
-                        <li><a href="contact-us.php"> Contact Us</a></li>
-                        <li><a href="products.php"> Products</a></li>
+                        <li><a href="/"> Home</a></li>
+                        <li><a href="/about-us"> About Us</a></li>
+                        <li><a href="/contact-us"> Contact Us</a></li>
+                        <li><a href="/products"> Products</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="footer__quickLinks">
                     <div class="title">Other Links</div>
-                    {%- if section.settings.menu_2 != blank -%}
-                    {%- if section.settings.menu_type_desktop == 'dropdown' -%}
                     
+                    {%- if section.settings.menu_2 -%}
+                        {% assign linklist = section.settings.footer_menu | linklist %}
+                          {% if linklist.links.size > 0 %}
+                    12
                       <ul>
-                        {%- for link in section.settings.menu_2.links -%}
-                          <li {% if link.url contains page.url %}class="active"{% endif %}>
-                            <a class="" href="{{ link.url }}">{{ link.title | escape }}</a>
-                          </li>
-                        {%- endfor -%}                            
+                        {% for link in linklist.links %}
+                          <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+                        {%- endfor -%}                           
                       </ul>
-                    
+                      
+                    {% endif %}
                   {%- endif -%}
-                {%- endif -%}
+                
                     <ul>
                         <li><a href="privacy-policy.php">privacy Policy</a></li>
                         <li><a href="term-and-services.php">Term And Services</a></li>
@@ -70,7 +71,7 @@
             <div class="col-lg-3">
                 <div class="footer__quickLinks">
                     <div class="title">Contact Info</div>
-                    {%- if section.settings.menu_2 != blank -%}
+                    {%- if section.settings.menu_3 != blank -%}
                     {%- if section.settings.menu_type_desktop == 'dropdown' -%}
                     
                       <ul>
