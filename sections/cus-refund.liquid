@@ -1,0 +1,60 @@
+<div class='about mar-y py-5'>
+    <div class='container p-0'>
+        <div class='row no-guttera'>
+            <div class='col-12 col-lg-12'>
+                <div class='about__content privacy '>
+                    <div class='section-content'>
+                        <h3 class='heading'>Refund policy</h3>
+                        <p>Due to the pandemic, all sales are final. There will be no returns, refunds or exchanges. The
+                            policy might change as everything becomes normal. Sorry for the inconvenience.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+      "name": "Cus Refund Policy",
+      "tag": "section",
+      "class": "announcement-bar-section",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "sub_title",
+          "default": "Collections",
+          "label": "Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Collections",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "default": "Collections",
+          "label": "Button Text"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+          }
+    ],
+    "presets": [
+        {
+          "name": "Cus Refund Policy"
+        }
+      ]
+    }
+    {% endschema %}
