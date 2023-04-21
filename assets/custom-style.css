@@ -61,3 +61,49 @@ form.search.header__search button.search__button {
  .facets__form-vertical {
     width: auto !important;
   }
+
+
+.active-facets.active-facets-desktop {
+  display: none;
+}
+.facets__disclosure-vertical {
+  border: unset !important;
+}
+.facets__disclosure-vertical .list-menu__item span {
+  font-size: 16px !important;
+}
+.facets__disclosure-vertical .list-menu__item .facet-checkbox > svg {
+  height: 13px !important;
+  margin-top: 5px !important;
+}
+.facets__disclosure-vertical .list-menu__item .facet-checkbox {
+  padding: 5px 0px !important;
+}
+.facets__disclosure-vertical .list-menu__item .facet-checkbox > svg.icon.icon-checkmark {
+  top: 5px;
+}
+#ProductGridContainer .collection {
+  padding: 0;
+  background-color: unset;
+}
+
+#ProductGridContainer .collection {
+  padding: 0;
+  background-color: unset;
+}
+.facet-filters__sort {
+  font-size: 18px !important;
+}
+.facet-filters__label  label {
+  font-size: 17px !important;
+}
+.product-count-vertical {
+  display: none !important;
+}
+#SortBy:focus {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: unset !important;
+  border-radius: unset !important;
+  box-shadow: unset !important;
+}
