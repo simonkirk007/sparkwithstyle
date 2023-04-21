@@ -1,3 +1,13 @@
+<div class="page-title">
+    <div class="page-title__img">
+        <img src="{% if section.settings.banner_img != blank %} {{ section.settings.banner_img | img_url: 'master' }} {% else %}{{ 'about-banner.png' | asset_url }}{% endif %}" alt="image" class="imgFluid">
+    </div>
+    <div class="page-title__content">
+       
+            <h2 class="heading box-text">Cart</h2>
+          
+    </div>
+</div>
 {{ 'component-cart.css' | asset_url | stylesheet_tag }}
 {{ 'component-cart-items.css' | asset_url | stylesheet_tag }}
 {{ 'component-totals.css' | asset_url | stylesheet_tag }}
