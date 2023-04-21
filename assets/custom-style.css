@@ -167,3 +167,7 @@ quantity-input.quantity.cart-quantity {
 .cart-item__quantity-wrapper {
     align-items: center;
 }
+
+form#customer_login label {
+    display: none;
+}
