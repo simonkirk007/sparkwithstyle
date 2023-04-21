@@ -144,7 +144,7 @@ form.search.header__search button.search__button {
   padding: 0;
 }
 .product__info-container .product-form {
-    margin: 0;
+    margin: 0 !important;
 }
 .product-variant-color {
     height: 40px;
