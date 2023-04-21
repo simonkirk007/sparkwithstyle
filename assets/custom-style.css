@@ -158,3 +158,12 @@ form.search.header__search button.search__button {
     outline: 2px solid #000;
     outline-offset: 2px;
 }
+
+quantity-input.quantity.cart-quantity {
+    height: 38px;
+    min-height: 38px;
+}
+
+.cart-item__quantity-wrapper {
+    align-items: center;
+}
