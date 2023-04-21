@@ -149,10 +149,11 @@
       <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
 
       {%- form 'guest_login' -%}
-        <div class="contact-form__fields"></div>
-        <button>
+        <div class="contact-form__fields">
+        <button class="themeBtn themeBtn--full justify-content-center">
           {{ 'customer.login_page.guest_continue' | t }}
         </button>
+          </div>
       {%- endform -%}
     </div>
   {%- endif -%}
