@@ -3,7 +3,6 @@
     "2d9a672c-a8b2-424c-84bc-492e63a601f0": {
       "type": "cus-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-bg.jpg",
         "sub_title": "Collections",
         "title": "Collections",
         "button_text": "Shop Now",
@@ -13,12 +12,10 @@
     "e8ce2c51-8b58-4e6f-be56-e5985b35d4c7": {
       "type": "cus-sub-banner",
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/sub-banner-bg-1.png",
         "sub_title_1": "Collections",
         "title_1": "Collections",
         "button_text_1": "Shop now",
         "button_link_1": "shopify:\/\/collections\/all",
-        "image_2": "shopify:\/\/shop_images\/sub-banner-bg-2.png",
         "sub_title_2": "Collections",
         "title_2": "Collections",
         "button_text_2": "Shop now",
@@ -35,11 +32,11 @@
     "7ac861c3-51bf-4807-8c4c-39c83cf0dfd7": {
       "type": "cus-about-sec",
       "settings": {
-        "image": "shopify:\/\/shop_images\/about-img-1.png",
+        "image": "shopify:\/\/shop_images\/IMG_5388_ea3663ff-9a2b-4469-a055-b93faaebcabf.png",
         "sub_title": "Collections",
         "title": "Collections",
         "button_text": "Learn More",
-        "button_link": "#"
+        "button_link": "shopify:\/\/pages\/about-us"
       }
     },
     "976d88ac-c4a0-4819-bb31-acf2439fff0a": {
@@ -92,7 +89,6 @@
         "be608de8-a107-467c-accd-689dc69276b3": {
           "type": "column",
           "settings": {
-            "image_1": "shopify:\/\/shop_images\/person-img-1.png",
             "title": "Floyd Miles",
             "content": "<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit<\/p>"
           }
@@ -100,7 +96,6 @@
         "2e75eec3-56e6-4207-86aa-b4cea9fe96ac": {
           "type": "column",
           "settings": {
-            "image_1": "shopify:\/\/shop_images\/person-img-2.png",
             "title": "Ronald Richards",
             "content": "<p>ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.<\/p>"
           }
@@ -108,7 +103,6 @@
         "ef244d29-2592-4d2a-949d-65cfde7f419e": {
           "type": "column",
           "settings": {
-            "image_1": "shopify:\/\/shop_images\/person-img-3.png",
             "title": "Savannah Nguyen",
             "content": "<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit<\/p>"
           }
