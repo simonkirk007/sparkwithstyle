@@ -32,7 +32,7 @@
     "7ac861c3-51bf-4807-8c4c-39c83cf0dfd7": {
       "type": "cus-about-sec",
       "custom_css": [
-        ".about__img > img{height:839px}"
+        ".about__img > img {width:70%; float:left; margin-left:20%}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_5388_ea3663ff-9a2b-4469-a055-b93faaebcabf.png",
