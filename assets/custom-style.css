@@ -193,3 +193,12 @@ form#create_customer label {
 #customer_login input {
     font-size: 18px;
 }
+.price .price__sale .price-item--regular {
+  text-decoration: line-through !important;
+  opacity: 0.5;
+  font-size: 18px;
+}
+.price .price__sale {
+  display: flex;
+  flex-direction: row-reverse;
+}
