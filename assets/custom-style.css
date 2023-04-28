@@ -202,3 +202,10 @@ form#create_customer label {
   display: flex;
   flex-direction: row-reverse;
 }
+
+.product .price .badge.price__badge-sale {
+  background-color: #f4cd0d;
+  border: unset;
+  font-size: 15px;
+  padding: 5px 15px;
+}
