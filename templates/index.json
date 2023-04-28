@@ -13,10 +13,12 @@
     "e8ce2c51-8b58-4e6f-be56-e5985b35d4c7": {
       "type": "cus-sub-banner",
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/sub-banner-bg-1.png",
         "sub_title_1": "Collections",
         "title_1": "Collections",
         "button_text_1": "Shop now",
         "button_link_1": "shopify:\/\/collections\/all",
+        "image_2": "shopify:\/\/shop_images\/sub-banner-bg-2.png",
         "sub_title_2": "Collections",
         "title_2": "Collections",
         "button_text_2": "Shop now",
