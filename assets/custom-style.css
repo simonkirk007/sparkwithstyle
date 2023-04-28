@@ -209,3 +209,17 @@ form#create_customer label {
   font-size: 15px;
   padding: 5px 15px;
 }
+.cart-wrap i {
+  font-size: 1.85rem;
+}
+.cart-wrap {
+  position: relative;
+}
+.cart-wrap .cart-count-bubble {
+  height: 20px;
+  width: 20px;
+  left: 20px;
+  bottom: 24px;
+  background-color: var(--color-primary);
+  color: #000;
+}
