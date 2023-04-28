@@ -3,6 +3,7 @@
     "2d9a672c-a8b2-424c-84bc-492e63a601f0": {
       "type": "cus-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/banner-bg.jpg",
         "sub_title": "Collections",
         "title": "Collections",
         "button_text": "Shop Now",
@@ -32,10 +33,9 @@
     "7ac861c3-51bf-4807-8c4c-39c83cf0dfd7": {
       "type": "cus-about-sec",
       "custom_css": [
-        ".about__img > img {width:70%; float:left; margin-left:20%}"
+        ".about__img > img {width: 70%; float: left; margin-left: 20%;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_5388_ea3663ff-9a2b-4469-a055-b93faaebcabf.png",
         "sub_title": "Collections",
         "title": "Collections",
         "button_text": "Learn More",
