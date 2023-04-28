@@ -216,13 +216,15 @@
                   <li>
                       <a class="circle" href="/cart"><i class="bx bx-cart"></i>
                       </a>
-                    {%- if cart != empty -%}
                     <div class="cart-count-bubble">
+                    {%- if cart != empty -%}
                       {%- if cart.item_count < 100 -%}
                         <span aria-hidden="true">{{ cart.item_count }}</span>
                       {%- endif -%}
-                    </div>
+                  {%- else -%}
+                      <span aria-hidden="true">0</span>
                   {%- endif -%}
+                    </div>
                   </li>
                   <li>
                       <a href="/account/login"><i class="bx bx-user"></i>
