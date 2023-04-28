@@ -38,6 +38,7 @@
         ".about__img > img {width: 70%; float: left; margin-left: 20%;}"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/about-img-1.png",
         "sub_title": "Collections",
         "title": "Collections",
         "button_text": "Learn More",
@@ -94,6 +95,7 @@
         "be608de8-a107-467c-accd-689dc69276b3": {
           "type": "column",
           "settings": {
+            "image_1": "shopify:\/\/shop_images\/person-img-1.png",
             "title": "Floyd Miles",
             "content": "<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit<\/p>"
           }
@@ -101,6 +103,7 @@
         "2e75eec3-56e6-4207-86aa-b4cea9fe96ac": {
           "type": "column",
           "settings": {
+            "image_1": "shopify:\/\/shop_images\/person-img-2.png",
             "title": "Ronald Richards",
             "content": "<p>ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.<\/p>"
           }
@@ -108,6 +111,7 @@
         "ef244d29-2592-4d2a-949d-65cfde7f419e": {
           "type": "column",
           "settings": {
+            "image_1": "shopify:\/\/shop_images\/person-img-3.png",
             "title": "Savannah Nguyen",
             "content": "<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit<\/p>"
           }
