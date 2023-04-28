@@ -3,9 +3,7 @@
     "banner": {
       "type": "main-collection-banner",
       "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "background-1"
+        "banner_img": "shopify:\/\/shop_images\/Group_151.png"
       }
     },
     "product-grid": {
