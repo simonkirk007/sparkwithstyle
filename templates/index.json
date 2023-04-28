@@ -14,13 +14,13 @@
       "type": "cus-sub-banner",
       "settings": {
         "image_1": "shopify:\/\/shop_images\/sub-banner-bg-1.png",
-        "sub_title_1": "Collections",
-        "title_1": "Collections",
+        "title_1": "Lucknawi Kurti",
+        "content_1": "<p>I love what I do. All dresses are carefully selected keeping my customers needs, latest trends and fashion in mind. I work directly with the manufacturers in India.<\/p>",
         "button_text_1": "Shop now",
         "button_link_1": "shopify:\/\/collections\/all",
         "image_2": "shopify:\/\/shop_images\/sub-banner-bg-2.png",
-        "sub_title_2": "Collections",
-        "title_2": "Collections",
+        "title_2": "White Silk Palazzo Suit",
+        "content_2": "<p>I am loving the process of working one on one with my clients. It brings me joy when I see the beautiful smile on their face that gets brighter in Spark In Style dresses.<\/p>",
         "button_text_2": "Shop now",
         "button_link_2": "shopify:\/\/collections\/all"
       }
