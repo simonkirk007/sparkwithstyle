@@ -216,6 +216,14 @@
                   <li>
                       <a class="circle" href="/cart"><i class="bx bx-cart"></i>
                       </a>
+                    {%- if cart != empty -%}
+                    <div class="cart-count-bubble">
+                      {%- if cart.item_count < 100 -%}
+                        <span aria-hidden="true">{{ cart.item_count }}</span>
+                      {%- endif -%}
+                      <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+                    </div>
+                  {%- endif -%}
                   </li>
                   <li>
                       <a href="/account/login"><i class="bx bx-user"></i>
