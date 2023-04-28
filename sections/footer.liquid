@@ -56,16 +56,16 @@
                     <div class="title">Contact Info</div>
                   
                     {%- assign footer_menu_3 = section.settings.footer_menu_3 -%}
-{%- if footer_menu_3 != blank -%}
-  {% assign linklist = footer_menu_3 | linklist %}
-  {% if linklist.links.size > 0 %}
-    <ul>
-      {% for link in linklist.links %}
-        <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-{%- endif -%}
+                      {%- if footer_menu_3 != blank -%}
+                        {% assign linklist = footer_menu_3 | linklist %}
+                        {% if linklist.links.size > 0 %}
+                          <ul>
+                            {% for link in linklist.links %}
+                              <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      {%- endif -%}
 
                     <ul>
                         <li><a href="tel:31279994069"> (312) 799-94069</a></li>
