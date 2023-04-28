@@ -91,6 +91,7 @@
     },
     "a6980ae8-59cf-42e1-bfc5-8b69fcafefc7": {
       "type": "cus-reviews",
+      "disabled": true,
       "blocks": {
         "be608de8-a107-467c-accd-689dc69276b3": {
           "type": "column",
