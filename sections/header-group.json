@@ -27,6 +27,7 @@
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
+        "top_content": "Free shipping on orders $85 and up. Use code “FREESHIP” at checkout.",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
