@@ -199,8 +199,8 @@ form#create_customer label {
   font-size: 18px;
 }
 .price .price__sale {
-  display: flex;
-  flex-direction: row-reverse;
+  display: flex !important;
+  flex-direction: row-reverse !important;
 }
 
 .product .price .badge.price__badge-sale {
