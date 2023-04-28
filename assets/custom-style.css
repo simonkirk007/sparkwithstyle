@@ -223,3 +223,36 @@ form#create_customer label {
   background-color: var(--color-primary);
   color: #000;
 }
+
+
+
+.header-main__nav > li  .sub-menu {
+  position: absolute;
+  background-color: #f2f2f2;
+  padding: 15px 0px 10px;
+  width: 220px;
+  left: 0;
+  top: 100%;
+  transform: translateY(-3px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+.header-main__nav > li .sub-menu li a {
+  padding: 5px 10px;
+  line-height: normal;
+  display: block;
+  text-align: center;
+}
+.header-main__nav > li {
+  position: relative;
+}
+.header-main__nav > li .sub-menu li a:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.header-main__nav > li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
