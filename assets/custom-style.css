@@ -318,3 +318,7 @@ label.product-variant-color-cream {
 label.product-variant-color-royal-blue {
     background-color: royalblue !important;
 }
+
+#predictive-search-results-groups-wrapper .predictive-search__result-group:first-child {
+  display: none;
+}
