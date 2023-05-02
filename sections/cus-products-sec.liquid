@@ -10,7 +10,7 @@
         <div class='row productSlider'>
 
         {% assign selected_collection = section.settings.collection %}
-        {% for product in collections[selected_collection].products %}
+        {% for product in collections[selected_collection].products limit: 10 %}
             <div class='col-lg-3'>
                 <div class='products-card card-hover'>
                     <a href="{{ product.url }}" class='products-card__img card-hover__img'>
