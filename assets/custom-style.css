@@ -322,3 +322,37 @@ label.product-variant-color-royal-blue {
 #predictive-search-results-groups-wrapper .predictive-search__result-group:first-child {
   display: none;
 }
+
+.template-search__search .search .field__input:focus, .template-search__search .search .field__input {
+  padding: 11px 32px !important;
+  border-radius: unset !important;
+  border: unset !important;
+  height: 50px;
+  margin: 0 !important;
+  font-size: 16px !important;
+}
+.template-search__search .search {
+}
+.template-search__search .search .field__label {
+  display: none;
+}
+.template-search__search .search .predictive-search {
+}
+.template-search__search .search .predictive-search .predictive-search__item .predictive-search__item-content p {
+  font-size: 16px !important;
+  margin: 0;
+}
+.template-search__search .search .predictive-search__list-item a {
+  font-size: 16px !important;
+}
+
+.template-search__search .search .predictive-search__item {
+  font-size: 16px;
+  margin: 0;
+}
+.template-search__search .search .reset__button.field__button {
+  height: 50px;
+}
+.template-search__search .search .search__button.field__button {
+  height: 50px;
+}
