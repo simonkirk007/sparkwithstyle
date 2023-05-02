@@ -239,7 +239,7 @@ form#create_customer label {
   padding: 5px 10px;
   line-height: normal;
   display: block;
-  text-align: center;
+  text-align: left;
 }
 .header-main__nav > li {
   position: relative;
