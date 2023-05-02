@@ -356,3 +356,7 @@ label.product-variant-color-royal-blue {
 .template-search__search .search .search__button.field__button {
   height: 50px;
 }
+
+.facet-filters.sorting.caption #SortBy {
+  padding-right: 30px !important;
+}
