@@ -42,6 +42,18 @@
 
         <div class="price">{{ card_product.price | money }}</div>
 
+      
+{% for option in card_product.options_with_values %}
+  {% if option contains 'Color' %}
+      {% assign color_option = option %}234234
+  {% endif %}
+{% endfor %}
+
+{% if color_option %}
+  {% for value in card_product.options_with_values[color_option] %}
+    {{ value }}
+  {% endfor %}
+{% endif %}
         <div class="d-flex justify-content-center m-0 mb-3 varition-btn">
             <a href="#" style="background-color: #FAB528;"></a>
             <a href="#" style="background-color: #FC043A;"></a>
