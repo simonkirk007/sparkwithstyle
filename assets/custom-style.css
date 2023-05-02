@@ -293,3 +293,11 @@ a.pagination__item.pagination__item-arrow.link.motion-reduce {
 .product__description ul li {
     list-style: disc;
 }
+
+label.product-variant-color-dark-wine {
+    background-color: #722F37 !important;
+}
+
+label.product-variant-color-dark-blue {
+    background-color: #00008B !important;
+}
