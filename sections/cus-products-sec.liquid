@@ -52,7 +52,12 @@
 {% if product.options.size > 1 %}
   {% for option in product.options %}
     {% if option == 'Color' %}
-      {% assign color_option = option %}123
+      {% assign color_option = option %}
+      {% if color_option %}321
+      {% for value in product.options_with_values[color_option] %}
+        {{ value }}
+      {% endfor %}
+    {% endif %}
     {% endif %}
   {% endfor %}
 {% endif %}
