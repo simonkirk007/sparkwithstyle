@@ -40,8 +40,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/about-img-1.png",
-        "sub_title": "Collections",
-        "title": "Collections",
+        "title": "About Us",
+        "content": "<p>Hello, Thank you for visiting my website.<\/p><p>I am Susan Thomas, originally from Gujarat, India now residing in Orland Park, IL. Fashion is my passion, especially Indian outfits. I hold high values to modesty, traditional, but yet classy clothing.<\/p><p>I live with a wonderful and supportive husband, who stands by me as I follow my heart and dreams. He makes my life so much fun and easy when I host live shows and events. I am not sure what I would do without him. I am a Mom to 2 amazing boys, who inspire me every day. They make sure I keep going and never give up. My youngest, Ethan, joins me on Facebook live shows and Aiden helps with lighting, sound and technology. My extended family are also heart of the business, cheering and rooting for me. For every occasion they chose Spark In Style collection and share pictures on Facebook. Spark In Style is incomplete without each one of them. I enjoy juggling between work, family, church and business. Life keeps me motivated<\/p>",
         "button_text": "Learn More",
         "button_link": "shopify:\/\/pages\/about-us"
       }
