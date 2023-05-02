@@ -50,21 +50,21 @@
   {% endif %}
 {% endfor %}
 
-
-  
-    
-  
-
-
-      {% if color_option %}
-        <div class="d-flex justify-content-center m-0 mb-3 varition-btn">
-            {% for value in color_option.values %}
-              <a href="#" style="background-color: {{ value }};"></a>
-            {% endfor %}
-        </div>
-      {% endif %}
+{% if color_option %}
+  {% for value in color_option.values %}
+    {{ value }}
+  {% endfor %}
+{% endif %}
 
       
+        <div class="d-flex justify-content-center m-0 mb-3 varition-btn">
+            <a href="#" style="background-color: #FAB528;"></a>
+            <a href="#" style="background-color: #FC043A;"></a>
+            <a href="#" style="background-color: #223F9A;"></a>
+            <a href="#" style="background-color: #D9D9D9;"></a>
+            <a href="#" style="background-color: #044343;"></a>
+            <a href="#" style="background-color: #222222;"></a>
+        </div>
         <a href="{{ card_product.url }}" class="add">Add</a>
     </div>
 </div>
