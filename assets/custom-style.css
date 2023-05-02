@@ -301,3 +301,7 @@ label.product-variant-color-dark-wine {
 label.product-variant-color-dark-blue {
     background-color: #00008B !important;
 }
+
+.product__info-wrapper .product-form__input input[type=radio]+label {
+    margin-bottom: 15px;
+}
