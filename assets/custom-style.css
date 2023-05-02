@@ -284,3 +284,8 @@ form#create_customer label {
 .pagination__list li:hover a.pagination__item:hover::after {
     display: none !important;
 }
+
+a.pagination__item.pagination__item-arrow.link.motion-reduce {
+    background-color: var(--color-secondary);
+    color: #fff !important;
+}
