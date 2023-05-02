@@ -253,3 +253,7 @@ form#create_customer label {
   visibility: visible;
   transform: translateY(0);
 }
+
+.varition-btn a {
+  border: 1px solid #a4a4a4;
+}
