@@ -305,3 +305,12 @@ label.product-variant-color-dark-blue {
 .product__info-wrapper .product-form__input input[type=radio]+label {
     margin-bottom: 15px;
 }
+
+
+label.product-variant-color-dark-green {
+    background-color: darkgreen !important;
+}
+
+label.product-variant-color-cream {
+    background-color: #FFFDD0 !important;
+}
