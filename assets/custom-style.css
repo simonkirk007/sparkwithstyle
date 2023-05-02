@@ -198,10 +198,7 @@ form#create_customer label {
   opacity: 0.5;
   font-size: 18px;
 }
-.price .price__sale {
-  display: flex !important;
-  flex-direction: row-reverse !important;
-}
+
 
 .product .price .badge.price__badge-sale {
   background-color: #f4cd0d;
