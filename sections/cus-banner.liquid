@@ -4,13 +4,10 @@
         <div class="row align-items-center">
             <div class="col-lg-7">
                 <div class="banner-content">
-                    <h1 class="banner-content__subHeading">Welcome to Our Website</h1>
-                    <h2 class="banner-content__heading">SPARK IN <span class="box-text">STYLE</span></h2>
-                    <p>
-                        I am Susan Thomas, originally from Gujarat, India now residing in Orland Park, IL. Fashion is my
-                        passion, especially Indian outfits. I hold high values to modesty, traditional, but yet classy
-                        clothing.
-                    </p>
+                    <h1 class="banner-content__subHeading">{{ section.settings.sub_title }}</h1>
+                    <h2 class="banner-content__heading">{{ section.settings.title }}</h2>
+                    {{ section.settings.content }}
+                  
                     <a href="{{ section.settings.button_link }}" class="themeBtn">{{ section.settings.button_text }}</a>
                 </div>
             </div>
@@ -33,13 +30,19 @@
           "type": "text",
           "id": "sub_title",
           "default": "Collections",
-          "label": "Sub Title"
+          "label": "Welcome to Our Website"
         },
         {
           "type": "text",
           "id": "title",
-          "default": "Collections",
+          "default": "SPARK IN <span class='box-text'>STYLE</span>",
           "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "default": "<p>I am Susan Thomas, originally from Gujarat, India now residing in Orland Park, IL. Fashion is my passion, especially Indian outfits. I hold high values to modesty, traditional, but yet classy clothing.</p>",
+          "label": "Content"
         },
         {
           "type": "text",
