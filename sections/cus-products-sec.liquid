@@ -49,7 +49,7 @@
 
 
 {% assign color_option = '' %}
-{% for option in card_product.options_with_values %}
+{% for option in product.options_with_values %}
   {% if option.name contains 'Color' %}
     {% assign color_option = option %}
   {% endif %}
