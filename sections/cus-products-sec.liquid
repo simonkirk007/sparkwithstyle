@@ -48,18 +48,19 @@
 
 
 
-
-{% for option in product.options_with_values %}
-  {% if option contains 'Color' %}
-      {% assign color_option = option %}234234
+{% assign color_option = '' %}
+{% for option in card_product.options_with_values %}
+  {% if option.name contains 'Color' %}
+    {% assign color_option = option %}
   {% endif %}
 {% endfor %}
 
 {% if color_option %}
-  {% for value in product.options_with_values[color_option] %}
+  {% for value in color_option.values %}
     {{ value }}
   {% endfor %}
 {% endif %}
+          
 
                       
                         <div class="d-flex justify-content-center m-0 mb-3 varition-btn">
