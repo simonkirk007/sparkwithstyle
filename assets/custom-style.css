@@ -266,3 +266,21 @@ form#create_customer label {
   text-overflow: ellipsis;
   display: ;
 }
+
+.pagination__list {
+    width: 100%;
+}
+
+.pagination__list a.pagination__item {height: 40px;}
+
+.pagination__list a.pagination__item.pagination__item--current.light::after {
+    display: none;
+}
+
+.pagination__list li:hover a.pagination__item:hover, .pagination__list a.pagination__item.pagination__item--current.light {
+    background-color: gold !important;
+}
+
+.pagination__list li:hover a.pagination__item:hover::after {
+    display: none !important;
+}
