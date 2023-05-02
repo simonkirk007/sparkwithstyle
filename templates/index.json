@@ -29,7 +29,7 @@
       "type": "cus-products-sec",
       "settings": {
         "title": "FEATURED SALWAR SUIT COLLECTION",
-        "collection": "saree"
+        "collection": "salwar-suits"
       }
     },
     "7ac861c3-51bf-4807-8c4c-39c83cf0dfd7": {
@@ -38,6 +38,7 @@
         ".about__img > img {width: 70%; float: left; margin-left: 20%;}"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/about-img-1.png",
         "sub_title": "Collections",
         "title": "Collections",
         "button_text": "Learn More",
@@ -50,28 +51,28 @@
         "23d5e1c2-318f-4d25-9b70-298420023a9c": {
           "type": "column",
           "settings": {
-            "collection": "women",
+            "collection": "custom-order",
             "title": "ALL"
           }
         },
         "c340abd5-36c5-4e84-98c1-64f3605e05f9": {
           "type": "column",
           "settings": {
-            "collection": "women",
+            "collection": "salwar-suits",
             "title": "Salwar Suits"
           }
         },
         "80bbd22d-a039-47ad-ab2d-e7a142aafb21": {
           "type": "column",
           "settings": {
-            "collection": "women",
+            "collection": "saree",
             "title": "SAREE"
           }
         },
         "a6bb1349-45c7-4d8d-9774-77cfe6ebf6ae": {
           "type": "column",
           "settings": {
-            "collection": "mens",
+            "collection": "kurtis",
             "title": "KURTI"
           }
         }
@@ -90,6 +91,7 @@
     },
     "a6980ae8-59cf-42e1-bfc5-8b69fcafefc7": {
       "type": "cus-reviews",
+      "disabled": true,
       "blocks": {
         "be608de8-a107-467c-accd-689dc69276b3": {
           "type": "column",
