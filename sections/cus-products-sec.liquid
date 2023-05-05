@@ -26,9 +26,16 @@
                       {% endcomment %}  
                         <div class="title"><a href="{{ product.url }}">{{ product.title }}</a></div>
 
-                        <div class="price">{{ product.price | money }}</div>
+                        
                       
-
+                      {% if card_product.compare_at_price > card_product.price %}
+                        <div class="price price--on-sale">
+                          <span class="price--regular">{{ card_product.compare_at_price | money }}</span>
+                          <span class="price--sale">{{ card_product.price | money }}</span>
+                        </div>
+                      {% else %}
+                        <div class="price">{{ card_product.price | money }}</div>
+                      {% endif %}
 
 
 
