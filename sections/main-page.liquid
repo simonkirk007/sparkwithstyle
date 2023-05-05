@@ -5,7 +5,7 @@
     <div class="page-title__content">
         <h2 class="heading box-text">
           {% if section.settings.page_title != blank %}
-            <h2 class="heading box-text">{{ section.settings.page_title }}</h2>
+            <h2 class="heading box-text {% if section.settings.my_select_field == 'option2' %} text-dark{% endif %}">{{ section.settings.page_title }}</h2>
           {% else %}
             <h2 class="heading box-text">{{ page.title | escape }}</h2>
           {% endif %}
@@ -18,6 +18,21 @@
   "tag": "section",
   "class": "section",
   "settings": [
+        {
+      "type": "select",
+      "id": "my_select_field",
+      "label": "Image Position",
+      "options": [
+        {
+          "value": "option1",
+          "label": "Text White"
+        },
+        {
+          "value": "option2",
+          "label": "Text Black"
+        }
+      ]
+    },
     {
       "type": "text",
       "id": "page_title",
