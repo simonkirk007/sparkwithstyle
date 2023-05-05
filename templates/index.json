@@ -52,28 +52,28 @@
         "23d5e1c2-318f-4d25-9b70-298420023a9c": {
           "type": "column",
           "settings": {
-            "collection": "for-girls",
+            "collection": "women",
             "title": "ALL"
           }
         },
         "c340abd5-36c5-4e84-98c1-64f3605e05f9": {
           "type": "column",
           "settings": {
-            "collection": "for-girls",
+            "collection": "salwar-suits",
             "title": "Salwar Suits"
           }
         },
         "80bbd22d-a039-47ad-ab2d-e7a142aafb21": {
           "type": "column",
           "settings": {
-            "collection": "for-girls",
+            "collection": "saree-collection",
             "title": "SAREE"
           }
         },
         "a6bb1349-45c7-4d8d-9774-77cfe6ebf6ae": {
           "type": "column",
           "settings": {
-            "collection": "for-girls",
+            "collection": "kurtis",
             "title": "KURTI"
           }
         }
