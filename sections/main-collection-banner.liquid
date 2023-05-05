@@ -3,7 +3,7 @@
         <img src="{% if section.settings.banner_img !=blank %}{{ section.settings.banner_img | img_url: 'master' }} {% else %}{{ 'product-banner.png' | asset_url }}{% endif %}" alt="image" class="imgFluid">
     </div>
     <div class="page-title__content">
-        <h2 class="heading box-text">
+        
  
             <h2 class="heading box-text {% if section.settings.my_select_field == 'option2' %} text-dark{% endif %}">{{- collection.title | escape -}}</h2>
 
