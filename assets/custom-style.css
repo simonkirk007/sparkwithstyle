@@ -401,10 +401,12 @@ label.product-variant-color-dark-wine {
   padding: 5px 8px;
 }
 .price.price--on-sale span {
-  font-family: serif;
+  font-family: serif !important;
 }
 .price.price--on-sale .price--sale {
   text-decoration: line-through !important;
   opacity: 0.5;
   font-size: 14px;
 }
+
+"Poppins", sans-serif
