@@ -414,7 +414,7 @@ a.pagination__item.pagination__item-arrow.link.motion-reduce {
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: var(--color-primary);
+  background-color: #db2d2d;
   padding: 5px 15px;
   font-size: 10px;
   color: #fff;
@@ -422,6 +422,9 @@ a.pagination__item.pagination__item-arrow.link.motion-reduce {
   font-weight: bold;
   border-radius: .25rem;
   z-index: 99999;
+}
+.out-of-stock.sale{
+  background-color: var(--color-primary);
 }
 .products-card {
   position: relative;
