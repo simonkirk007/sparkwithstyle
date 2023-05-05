@@ -59,12 +59,10 @@
       {% assign color_limit = 5 %}
       {% if color_option %}
         <div class="d-flex justify-content-center m-0 mb-3 varition-btn">
-           {% for value in color_option.values limit:5 %}
+           {% for value in color_option.values %}
               <a href="javascript:void(0)" style="background-color: {{ value | handleize }};" class="product-variant-color product-variant-color-{{ value | handleize }}"></a>
            {% endfor %}
-          {% if items.size > 5 %}
-            <a href="#">Show More</a>
-          {% endif %}
+          
         </div>
       {% endif %}
   
