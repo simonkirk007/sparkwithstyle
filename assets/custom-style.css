@@ -400,6 +400,9 @@ label.product-variant-color-dark-wine {
 .product-form__buttons {
   padding: 5px 8px;
 }
+.price.price--on-sale span {
+  font-family: serif;
+}
 .price.price--on-sale .price--sale {
   text-decoration: line-through !important;
   opacity: 0.5;
