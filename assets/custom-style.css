@@ -200,12 +200,18 @@ form#create_customer label {
 }
 
 
-.product .price .badge.price__badge-sale {
+.product .price .badge.price__badge-sale,
+.product .price .badge.price__badge-sold-out {
   background-color: #f4cd0d;
   border: unset;
   font-size: 15px;
   padding: 5px 15px;
 }
+
+.product .price .badge.price__badge-sold-out {
+  background-color: #db2d2d;
+}
+
 .cart-wrap i {
   font-size: 1.85rem;
 }
