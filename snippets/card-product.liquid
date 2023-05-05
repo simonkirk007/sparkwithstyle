@@ -33,6 +33,9 @@
     endif
   -%}
   <div class='products-card card-hover'>
+    {% if product.available == false %}
+      <span class="out-of-stock">SOLD OUT</span>
+    {% endif %}
     <a href="{{ card_product.url }}" class='products-card__img card-hover__img'>
         <img src='{{ card_product.featured_image.src | img_url: 'large' }}' alt='image' class='imgFluid' loading="lazy">
     </a>
