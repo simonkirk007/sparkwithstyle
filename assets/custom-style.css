@@ -379,3 +379,8 @@ label.product-variant-color-dark-wine {
 .products-card {
   position: relative;
 }
+
+.varition-btn a {
+  width: 20px !important;
+  height: 20px !important;
+}
