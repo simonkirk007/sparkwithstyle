@@ -50,7 +50,7 @@
                             {% endfor %}
                         </div>
                         {% endif %}
-                        <a href="{{ product.url }}" class="add">Add</a>
+                        <a href="{{ product.url }}" class="add">{% if product.available == false %}View{% else %}Add{% endif %}</a>
                     </div>
                 </div>
             </div>
