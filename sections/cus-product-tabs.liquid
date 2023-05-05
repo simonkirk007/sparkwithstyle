@@ -30,10 +30,14 @@
                         
                     <div class='col-lg-3'>
                         <div class='products-card card-hover'>
+                          {% if product.available == false %}
+                            <span class="out-of-stock">SOLD OUT</span>
+                          {% endif %}
                             <a href="{{ product.url }}" class='products-card__img card-hover__img'>
                                 <img src='{{ product.featured_image.src | img_url: 'large' }}' alt='image' class='imgFluid' loading="lazy">
                             </a>
                             <div class='products-card__content'>
+                              
                                 <div class="category">{% if product.type != blank %} {{ product.type }} {% else %} Product {% endif %}</div>
                                 <div class="title"><a href="{{ product.url }}"> {{ product.title }}</a></div>
                                 <div class="price">{{ product.price | money }}</div>
