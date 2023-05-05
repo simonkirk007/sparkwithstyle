@@ -206,6 +206,7 @@ form#create_customer label {
   border: unset;
   font-size: 15px;
   padding: 5px 15px;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .product .price .badge.price__badge-sold-out {
