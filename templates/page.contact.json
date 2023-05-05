@@ -3,7 +3,7 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "page_title": "",
+        "page_title": "GET IN TOUCH",
         "banner_img": "shopify:\/\/shop_images\/contact-banner.png"
       }
     },
