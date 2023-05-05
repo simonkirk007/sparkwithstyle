@@ -298,7 +298,7 @@ label.product-variant-color-dark-wine {
     background-color: #722F37 !important;
 }
 
-label.product-variant-color-dark-blue {
+.product-variant-color-dark-blue {
     background-color: #00008B !important;
 }
 
@@ -307,15 +307,15 @@ label.product-variant-color-dark-blue {
 }
 
 
-label.product-variant-color-dark-green {
+.product-variant-color-dark-green {
     background-color: darkgreen !important;
 }
 
-label.product-variant-color-cream {
+.product-variant-color-cream {
     background-color: #FFFDD0 !important;
 }
 
-label.product-variant-color-royal-blue {
+.product-variant-color-royal-blue {
     background-color: royalblue !important;
 }
 
