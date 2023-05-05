@@ -384,3 +384,14 @@ label.product-variant-color-dark-wine {
   width: 20px !important;
   height: 20px !important;
 }
+
+
+.products-card__img > img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.products-card__img {
+  width: 100%;
+  height: 350px;
+}
