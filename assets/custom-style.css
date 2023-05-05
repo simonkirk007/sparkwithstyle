@@ -360,3 +360,22 @@ label.product-variant-color-royal-blue {
 .facet-filters.sorting.caption #SortBy {
   padding-right: 30px !important;
 }
+
+
+
+.out-of-stock {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: var(--color-primary);
+  padding: 5px 15px;
+  font-size: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: .25rem;
+  z-index: 99999;
+}
+.products-card {
+  position: relative;
+}
