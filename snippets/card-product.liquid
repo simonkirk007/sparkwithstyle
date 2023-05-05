@@ -33,9 +33,16 @@
     endif
   -%}
   <div class='products-card card-hover'>
-    {% if card_product.available == false %}
-      <span class="out-of-stock">SOLD OUT</span>
+     {% if product.compare_at_price > product.price %}
+        {% if product.available %}
+          <span class="out-of-stock">Sale</span>
+        {% else %}
+          <span class="out-of-stock">SOLD OUT</span>
+        {% endif %}
+      {% elsif product.available == false %}
+        <span class="out-of-stock">SOLD OUT</span>
     {% endif %}
+  
     <a href="{{ card_product.url }}" class='products-card__img card-hover__img'>
         <img src='{{ card_product.featured_image.src | img_url: 'large' }}' alt='image' class='imgFluid' loading="lazy">
     </a>
