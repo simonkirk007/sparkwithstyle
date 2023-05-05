@@ -56,7 +56,7 @@
 
  
 
-
+      {% assign color_limit = 5 %}
       {% if color_option %}
         <div class="d-flex justify-content-center m-0 mb-3 varition-btn">
            {% for value in color_option.values limit:5 %}
@@ -67,9 +67,15 @@
           {% endif %}
         </div>
       {% endif %}
-        <a href="{{ card_product.url }}" class="add"> 
-          {% if card_product.available == false %}View{% else %}Add{% endif %}
-        </a>
+  
+       {% if color_count > color_limit %}
+          <a href="#" id="show-more-colors">Show More</a>
+          <div id="hidden-colors" style="display: none;">
+            {% for value in color_values offset: color_limit %}
+              <a href="javascript:void(0)" style="background-color: {{ value | handleize }};" class="product-variant-color product-variant-color-{{ value | handleize }}"></a>
+            {% endfor %}
+          </div>
+        {% endif %}
     </div>
 </div>
 {%- endif -%}
