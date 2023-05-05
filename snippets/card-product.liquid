@@ -50,7 +50,16 @@
         <div class="category">{% if card_product.type != blank %}{{ card_product.type }} {% else %} Product {% endif %}</div>
         <div class="title"><a href="{{ card_product.url }}">{{ card_product.title }}</a></div>
 
-        <div class="price">{{ card_product.price | money }}</div>
+
+        {% if product.compare_at_price > product.price %}
+          <div class="price price--on-sale">
+            <span class="price--regular">{{ product.compare_at_price | money }}</span>
+            <span class="price--sale">{{ product.price | money }}</span>
+          </div>
+        {% else %}
+          <div class="price">{{ product.price | money }}</div>
+        {% endif %}
+    
         
       
 {% assign color_option = '' %}
