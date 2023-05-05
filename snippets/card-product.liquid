@@ -64,7 +64,9 @@
            {% endfor %}
         </div>
       {% endif %}
-        <a href="{{ card_product.url }}" class="add">Add</a>
+        <a href="{{ card_product.url }}" class="add"> 
+          {% if card_product.available == false %}View{% else %}Add{% endif %}
+        </a>
     </div>
 </div>
 {%- endif -%}
