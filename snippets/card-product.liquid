@@ -33,13 +33,13 @@
     endif
   -%}
   <div class='products-card card-hover'>
-     {% if product.compare_at_price > product.price %}
-        {% if product.available %}
+     {% if card_product.compare_at_price > card_product.price %}
+        {% if card_product.available %}
           <span class="out-of-stock">Sale</span>
         {% else %}
           <span class="out-of-stock">SOLD OUT</span>
         {% endif %}
-      {% elsif product.available == false %}
+      {% elsif card_product.available == false %}
         <span class="out-of-stock">SOLD OUT</span>
     {% endif %}
   
