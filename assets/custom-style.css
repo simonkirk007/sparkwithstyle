@@ -294,7 +294,35 @@ a.pagination__item.pagination__item-arrow.link.motion-reduce {
     list-style: disc;
 }
 
-label.product-variant-color-dark-wine {
+.product-variant-color-burgundy {
+    background-color: #800020 !important;
+}
+
+.product-variant-color-dark-purple {
+    background-color: #301934 !important;
+}
+
+.product-variant-color-grayish-blue {
+    background-color: #6699CC !important;
+}
+
+.product-variant-color-light-blue {
+    background-color: #ADD8E6 !important;
+}
+
+.product-variant-color-off-white {
+    background-color: #FAF9F6 !important;
+}
+
+.product-variant-color-light-pink {
+    background-color: #ffb6c1 !important;
+}
+
+.product-variant-color-navy-blue {
+    background-color: #000080 !important;
+}
+
+.product-variant-color-dark-wine {
     background-color: #722F37 !important;
 }
 
@@ -410,10 +438,3 @@ label.product-variant-color-dark-wine {
 }
 
 
-.product-variant-color-burgundy {
-    background-color: #800020 !important;
-}
-
-.product-variant-color-dark-purple {
-    background-color: #301934 !important;
-}
