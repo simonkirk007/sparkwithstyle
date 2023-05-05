@@ -396,3 +396,7 @@ label.product-variant-color-dark-wine {
   height: 350px;
   background-color: #e7eaec;
 }
+
+.product-form__buttons {
+  padding: 5px 8px;
+}
