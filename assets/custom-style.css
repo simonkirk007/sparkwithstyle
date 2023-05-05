@@ -271,7 +271,10 @@ form#create_customer label {
     width: 100%;
 }
 
-.pagination__list a.pagination__item {height: 40px;}
+.pagination__list a.pagination__item {
+  height: 40px;
+  width: 40px;
+}
 
 .pagination__list a.pagination__item.pagination__item--current.light::after {
     display: none;
@@ -454,3 +457,8 @@ a.pagination__item.pagination__item-arrow.link.motion-reduce {
 }
 
 
+
+
+.pagination__list>li {
+    max-width: 40px;
+}
