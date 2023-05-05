@@ -3,8 +3,9 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "my_select_field": "option2",
         "page_title": "",
-        "banner_img": "shopify:\/\/shop_images\/new-image.png"
+        "banner_img": "shopify:\/\/shop_images\/ba.png"
       }
     },
     "da5c0772-65e9-4c1b-a67a-bbeda0b4355b": {
