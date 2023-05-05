@@ -44,7 +44,7 @@
         <div class="title"><a href="{{ card_product.url }}">{{ card_product.title }}</a></div>
 
         <div class="price">{{ card_product.price | money }}</div>
-
+        
       
 {% assign color_option = '' %}
 {% for option in card_product.options_with_values %}
@@ -76,6 +76,7 @@
             {% endfor %}
           </div>
         {% endif %}
+      <a href="{{ card_product.url }}" class="add">{% if card_product.available == false %}View{% else %}Add{% endif %}</a>
     </div>
 </div>
 {%- endif -%}
