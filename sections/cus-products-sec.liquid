@@ -13,6 +13,10 @@
         {% for product in collections[selected_collection].products limit: 10 %}
             <div class='col-lg-3'>
                 <div class='products-card card-hover'>
+                  {% if product.available == false %}
+                    <span class="out-of-stock">Out of Stock</span>
+                  {% endif %}
+
                     <a href="{{ product.url }}" class='products-card__img card-hover__img'>
                         <img src='{{ product.featured_image.src | img_url: 'large' }}' alt='image' class='imgFluid' loading="lazy">
                     </a>
