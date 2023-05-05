@@ -51,7 +51,7 @@
                       <input type="text" name="last_name" id="ContactFormLastName" class="field__input" placeholder="Last Name" required>
                     </div>
                   </div>
-                  
+                  {% comment %}
                   <div class="col-12 col-lg-6">
                     <div class="contact-form__fields">
                       <select class="field__input" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]">
@@ -63,6 +63,7 @@
                     </div>
 
                   </div>
+                {% endcomment %}
                   <div class="col-12 col-lg-6">
                     <div class="contact-form__fields field--with-error">
                       <input
