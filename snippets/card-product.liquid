@@ -33,7 +33,7 @@
     endif
   -%}
   <div class='products-card card-hover'>
-    {% if product.available == false %}
+    {% if card_product.available == false %}
       <span class="out-of-stock">SOLD OUT</span>
     {% endif %}
     <a href="{{ card_product.url }}" class='products-card__img card-hover__img'>
