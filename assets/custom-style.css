@@ -409,4 +409,11 @@ label.product-variant-color-dark-wine {
   font-size: 14px;
 }
 
-"Poppins", sans-serif
+
+.product-variant-color-burgundy {
+    background-color: #800020 !important;
+}
+
+.product-variant-color-dark-purple {
+    background-color: #301934 !important;
+}
