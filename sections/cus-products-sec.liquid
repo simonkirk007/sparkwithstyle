@@ -13,9 +13,17 @@
         {% for product in collections[selected_collection].products limit: 10 %}
             <div class='col-lg-3'>
                 <div class='products-card card-hover'>
-                  {% if product.available == false %}
+
+                  
+                  {% if card_product.compare_at_price > card_product.price %}
+                    {% if card_product.available %}
+                      <span class="out-of-stock sale">Sale</span>
+                    {% else %}
+                      <span class="out-of-stock">SOLD OUT</span>
+                    {% endif %}
+                  {% elsif card_product.available == false %}
                     <span class="out-of-stock">SOLD OUT</span>
-                  {% endif %}
+                {% endif %}
 
                     <a href="{{ product.url }}" class='products-card__img card-hover__img'>
                         <img src='{{ product.featured_image.src | img_url: 'large' }}' alt='image' class='imgFluid' loading="lazy">
