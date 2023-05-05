@@ -46,11 +46,7 @@
                       >
                     </div>
                   </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="contact-form__fields">
-                      <input type="text" name="subject" id="ContactFormSubject" placeholder="{{ 'contact.form.subject' | t }}" required>
-                    </div>
-                  </div>
+                  
                   <div class="col-12 col-lg-6">
                     <div class="contact-form__fields">
                       <select class="field__input" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]">
@@ -111,6 +107,11 @@
                   </div>
 
                 </div>
+                  <div class="col-12 col-lg-12">
+                    <div class="contact-form__fields">
+                      <input type="text" name="subject" id="ContactFormSubject" placeholder="Subject" required>
+                    </div>
+                  </div>
                 <div class="col-12 col-lg-12">
                   <div class="contact-form__fields">
                     <textarea
