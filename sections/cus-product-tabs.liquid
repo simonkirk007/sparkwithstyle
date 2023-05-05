@@ -30,13 +30,13 @@
                         
                     <div class='col-lg-3'>
                         <div class='products-card card-hover'>
-                          {% if card_product.compare_at_price > card_product.price %}
-                              {% if card_product.available %}
+                          {% if product.compare_at_price > product.price %}
+                              {% if product.available %}
                                 <span class="out-of-stock sale">Sale</span>
                               {% else %}
                                 <span class="out-of-stock">SOLD OUT</span>
                               {% endif %}
-                            {% elsif card_product.available == false %}
+                            {% elsif product.available == false %}
                               <span class="out-of-stock">SOLD OUT</span>
                           {% endif %}
 
