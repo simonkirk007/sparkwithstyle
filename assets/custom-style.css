@@ -210,6 +210,7 @@ form#create_customer label {
 
 .product .price .badge.price__badge-sold-out {
   background-color: #db2d2d;
+  color: #fff;
 }
 
 .cart-wrap i {
