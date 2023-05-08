@@ -471,3 +471,34 @@ a.pagination__item.pagination__item-arrow.link.motion-reduce {
 .pagination__list>li {
     max-width: 40px;
 }
+
+.cart-items a {
+    font-size: 1.15rem !important;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin: 0.5rem 0 0.75rem;
+    font-family: "Poppins", sans-serif;
+    text-decoration: unset !important;
+}
+
+.cart-items {
+    font-size: 14px !important;
+}
+
+.cart-items .product-option {
+    font-size: 16px;
+}
+
+.cart-items .cart-item__price-wrapper span {
+    font-size: 20px !important;
+    margin: 5px 0 0 !important;
+}
+
+.cart-item cart-remove-button, .cart-item cart-remove-button a {
+    margin: 0px 0 0;
+    height: 40px !important;
+    min-height: 40px !important;
+}
+
+.cart-item cart-remove-button a {}
