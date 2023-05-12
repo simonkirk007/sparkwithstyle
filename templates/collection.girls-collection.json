@@ -4,7 +4,8 @@
       "type": "main-collection-banner",
       "settings": {
         "my_select_field": "option2",
-        "banner_img": "shopify:\/\/shop_images\/Group_156.png"
+        "banner_img": "shopify:\/\/shop_images\/Group_156.png",
+        "content_new": ""
       }
     },
     "product-grid": {
