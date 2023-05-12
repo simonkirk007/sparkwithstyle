@@ -4,8 +4,8 @@
     </div>
     <div class="page-title__content">
         
- 
             <h2 class="heading box-text {% if section.settings.my_select_field == 'option2' %} text-dark{% endif %}">{{- collection.title | escape -}}</h2>
+            <p></p>
 
     </div>
 </div>
@@ -35,6 +35,11 @@
       "type": "image_picker",
       "id": "banner_img",
       "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
     }
   ]
 }
