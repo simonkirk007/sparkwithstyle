@@ -3,7 +3,9 @@
     "banner": {
       "type": "main-collection-banner",
       "settings": {
-        "my_select_field": "option1"
+        "my_select_field": "option1",
+        "banner_img": "shopify:\/\/shop_images\/Group_155.png",
+        "content_new": "<p>adsa<\/p>"
       }
     },
     "product-grid": {
