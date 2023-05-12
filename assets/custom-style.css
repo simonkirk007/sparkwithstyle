@@ -597,3 +597,6 @@ a.pagination__item.pagination__item-arrow.link.motion-reduce {
   text-align: center;
   color: #fff;
 }
+.page-title__content .text-dark p {
+  color: #000;
+}
