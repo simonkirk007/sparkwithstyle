@@ -5,7 +5,7 @@
       "settings": {
         "my_select_field": "option2",
         "banner_img": "shopify:\/\/shop_images\/Group_156.png",
-        "content_new": ""
+        "content_new": "<p>asd<\/p>"
       }
     },
     "product-grid": {
