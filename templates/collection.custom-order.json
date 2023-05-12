@@ -3,7 +3,8 @@
     "banner": {
       "type": "main-collection-banner",
       "settings": {
-        "my_select_field": "option1"
+        "my_select_field": "option1",
+        "content_new": "<p>All the dresses listed here are custom ordered for wedding, engagements and other parties. They are here for inspiration if you prefer to order for your special occasion. We work directly with the clients to find the perfect dress for their occasion. Please contact us for more inquiries at (872) 704-0402.<\/p>"
       }
     },
     "product-grid": {
