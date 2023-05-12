@@ -4,8 +4,7 @@
       "type": "main-collection-banner",
       "settings": {
         "my_select_field": "option1",
-        "banner_img": "shopify:\/\/shop_images\/Group_155.png",
-        "content": "<p>Browse the latest Men's Short Kurta for great styles, exceptional fabric quality and low price. <\/p>"
+        "banner_img": "shopify:\/\/shop_images\/Group_155.png"
       }
     },
     "product-grid": {
