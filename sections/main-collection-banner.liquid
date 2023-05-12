@@ -5,7 +5,7 @@
     <div class="page-title__content">
         
             <h2 class="heading box-text {% if section.settings.my_select_field == 'option2' %} text-dark{% endif %}">{{- collection.title | escape -}}</h2>
-            <p></p>
+            {{ section.settings.content_new }}
 
     </div>
 </div>
@@ -38,7 +38,7 @@
     },
     {
       "type": "richtext",
-      "id": "content",
+      "id": "content_new",
       "label": "Content"
     }
   ]
