@@ -573,6 +573,12 @@ i.bx {
 }
 
 /* Cart */
+
+.cart-item .cart-item__quantity, .cart-items .cart-items__heading--wide
+{
+  display: none !important; 
+}
+
 .cart-page .cart-product-thumbnail {
   display: flex;
   align-items: center;
