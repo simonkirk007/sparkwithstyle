@@ -298,7 +298,7 @@ i.bx {
   color: var(--color-primary);
 }
 .footer__quickLinks {
-  margin-top: 3rem;
+  margin-top: -3rem;
 }
 .footer__quickLinks > ul > li :is(a, address) {
   color: #fff;
