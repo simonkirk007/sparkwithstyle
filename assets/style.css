@@ -1498,3 +1498,6 @@ table tr th {
     min-height: max-content;
     padding: 30px 0;
 }
+.facets-container .list-unstyled li.list-menu__item.facets__item:nth-child(1), .facets-container .list-unstyled li.list-menu__item.facets__item:nth-child(8) {
+    display: none;
+}
