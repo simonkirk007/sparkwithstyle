@@ -633,3 +633,6 @@ a.pagination__item.pagination__item--current {
     border-radius: 0.5rem;
     width: 231px;
 }
+.cart__ctas {
+    justify-content: end;
+}
