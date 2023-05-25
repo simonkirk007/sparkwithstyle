@@ -626,3 +626,9 @@ a.pagination__item.pagination__item--current {
 .product-form__input input[type=radio]:disabled+label, .product-form__input input[type=radio].disabled+label {
     pointer-events: none;
 }
+
+.cart__ctas button.cart__checkout-button {
+    height: 46px;
+    line-height: 1;
+    border-radius: 0.5rem;
+}
