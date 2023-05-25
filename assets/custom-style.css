@@ -608,3 +608,17 @@ a.pagination__item.pagination__item--current {
     font-size: 1.4rem;
     color: #000 !important;
 }
+
+.products-detail__content .themeBtn.sold-out-button {
+    background-color: #ddd;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #ddd;
+    pointer-events: none;
+}
+
+.products-detail__content .themeBtn.sold-out-button:hover {
+    color: #fff;
+}
+
+.products-detail__content .themeBtn.sold-out-button:hover::before, .products-detail__content .themeBtn.sold-out-button:hover::after {
+    height: 0;
+}
