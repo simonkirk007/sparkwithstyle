@@ -1,6 +1,17 @@
 // Initialize Wow
 new WOW().init();
 
+var checkbox = document.querySelector('input[name="filter.p.product_type"][value="Palazzo"]');
+
+// Check if the checkbox exists and its value is equal to "Palazzo"
+if (checkbox && checkbox.value === "Palazzo") {
+  // Find the closest <li> element and hide it
+  var listItem = checkbox.closest('.list-menu__item');
+  if (listItem) {
+    listItem.style.display = 'none';
+  }
+}
+
 $(document).ready(function() {
   // Your JavaScript code goes here
 
