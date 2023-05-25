@@ -622,3 +622,7 @@ a.pagination__item.pagination__item--current {
 .products-detail__content .themeBtn.sold-out-button:hover::before, .products-detail__content .themeBtn.sold-out-button:hover::after {
     height: 0;
 }
+
+.product-form__input input[type=radio]:disabled+label, .product-form__input input[type=radio].disabled+label {
+    pointer-events: none;
+}
