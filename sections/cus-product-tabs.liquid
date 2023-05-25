@@ -46,7 +46,7 @@
                             </a>
                             <div class='products-card__content'>
                               
-                                <div class="category">{% if product.type != blank %} {{ product.type }} {% else %} Product {% endif %}</div>
+                               {% comment %} <div class="category">{% if product.type != blank %} {{ product.type }} {% else %} Product {% endif %}</div>{% endcomment %}
                                 <div class="title"><a href="{{ product.url }}"> {{ product.title }}</a></div>
 
                               
