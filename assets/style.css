@@ -1304,7 +1304,7 @@ section.my-cart {
 }
 .products-detail__content .themeBtn {
   width: 45%;
-  border-radius: 0.5rem;
+  border-radius: 1.5rem;
   justify-content: center;
 }
 .products-detail__content .quantity .arrow > i {
