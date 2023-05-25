@@ -1440,6 +1440,10 @@ table tr th {
   text-decoration: underline !important;
   font-family: var(--f1);
 }
+.cart__ctas button.cart__checkout-button
+{
+  border-radius: 1.5rem;
+}
 .subtotal {
   display: flex;
   align-items: center;
