@@ -1442,7 +1442,7 @@ table tr th {
 }
 .cart__ctas button.cart__checkout-button
 {
-  border-radius: 1.5rem;
+  border-radius: 1.5rem !important;
 }
 .subtotal {
   display: flex;
