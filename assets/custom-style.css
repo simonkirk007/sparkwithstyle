@@ -613,6 +613,7 @@ a.pagination__item.pagination__item--current {
     background-color: #ddd;
     box-shadow: 0 0 0 2px #fff, 0 0 0 3px #ddd;
     pointer-events: none;
+    cursor: not-allowed;
 }
 
 .products-detail__content .themeBtn.sold-out-button:hover {
@@ -625,6 +626,7 @@ a.pagination__item.pagination__item--current {
 
 .product-form__input input[type=radio]:disabled+label, .product-form__input input[type=radio].disabled+label {
     pointer-events: none;
+    cursor: not-allowed;
 }
 
 .cart__ctas button.cart__checkout-button {
