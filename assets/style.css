@@ -87,6 +87,7 @@ i.bx {
   left: 0;
   transition: all 300ms ease-in-out;
   z-index: -1;
+  color: #fff;
 }
 .themeBtn::before {
   top: 0;
