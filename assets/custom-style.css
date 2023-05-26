@@ -647,7 +647,7 @@ a.pagination__item.pagination__item--current {
 }
 
 .cart__warnings {
-    padding: 50px 0;
+    padding: 50px 0 !important;
 }
 
 .cart__warnings a.button {
