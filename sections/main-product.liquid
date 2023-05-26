@@ -1,6 +1,6 @@
 <div class="page-title">
     <div class="page-title__img">
-      {% if collection.handle == 'mens-wear' %}
+      {% if product.collections[0].handle == 'mens-wear' %}
         <img src="{{ 'mens-single-product-banner.webp' | asset_url }}" alt="image" class="imgFluid">
       {% else %}
         <img src="{% if block.settings.banner_img !=blank %}{{ block.settings.banner_img | img_url: 'master' }} {% else %}{{ 'product-banner-2.png' | asset_url }}{% endif %}" alt="image" class="imgFluid">
