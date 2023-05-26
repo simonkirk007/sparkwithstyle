@@ -638,3 +638,7 @@ a.pagination__item.pagination__item--current {
 .cart__ctas {
     justify-content: end;
 }
+
+.products-detail__content .themeBtn {
+    width: auto;
+}
