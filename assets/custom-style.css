@@ -631,10 +631,11 @@ a.pagination__item.pagination__item--current {
 
 .cart__ctas button.cart__checkout-button {
     height: 46px;
-    line-height: 1;
-    border-radius: 1.5rem;
-    width: 231px;
+    line-height: 22px;
+    width: auto;
+    min-width: auto;
 }
+
 .cart__ctas {
     justify-content: end;
 }
