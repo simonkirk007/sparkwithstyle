@@ -1511,3 +1511,7 @@ table tr th {
   align-items: flex-end;
   justify-content: flex-start;
 }
+.collection_all-button button a
+{
+ color: #fff;  
+}
