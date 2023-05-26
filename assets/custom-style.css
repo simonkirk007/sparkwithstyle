@@ -645,3 +645,7 @@ a.pagination__item.pagination__item--current {
 .products-detail__content .themeBtn {
     width: auto;
 }
+
+.cart__warnings {
+    padding: 50px 0;
+}
