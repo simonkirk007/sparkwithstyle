@@ -1506,3 +1506,8 @@ table tr th {
 .facets-container .list-unstyled li.list-menu__item.facets__item:nth-child(1), .facets-container .list-unstyled li.list-menu__item.facets__item:nth-child(8) {
     display: none;
 }
+.cart__blocks.left {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
