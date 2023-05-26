@@ -634,7 +634,9 @@ a.pagination__item.pagination__item--current {
     line-height: 22px;
     width: auto;
     min-width: auto;
+    letter-spacing: 0;
 }
+
 
 .cart__ctas {
     justify-content: end;
