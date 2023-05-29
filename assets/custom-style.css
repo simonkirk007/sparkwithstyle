@@ -173,6 +173,10 @@ form#create_customer label {
     display: none;
 }
 
+.cart-item .cart-item__quantity, .cart-items .cart-items__heading--wide{
+  display: block;
+}
+
 #customer_login button.themeBtn.themeBtn--full.justify-content-center {
     font-size: 1.5rem !important;
     text-decoration: none !important;
