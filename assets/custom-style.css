@@ -771,4 +771,5 @@ a.pagination__item.pagination__item--current {
 
 a.collection_all-button.button {
     line-height: 1.5;
+    letter-spacing: 0;
 }
