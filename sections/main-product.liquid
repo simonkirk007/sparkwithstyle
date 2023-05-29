@@ -1,5 +1,5 @@
 <div class="page-title single-product-page">
-  <div class="container">
+            <div class="container">
               <nav class="breadcrumb">
                 <ul>
                   <li><a href="{{ shop.url }}">Home</a></li>
@@ -13,11 +13,13 @@
                 </ul>
               </nav>
             </div>
+
+    {% comment %}
     <div class="page-title__img">
             
 
       
-      {% comment %}
+      
       {% if product.collections[0].handle == 'mens-wear' %}
       
 
@@ -29,15 +31,16 @@
         {% else %}
         <img src="{% if block.settings.banner_img !=blank %}{{ block.settings.banner_img | img_url: 'master' }} {% else %}{{ 'product-banner-2.png' | asset_url }}{% endif %}" alt="image" class="imgFluid">
       {% endif %}
-      {% endcomment %}
+      
   
         
     </div>
-    {% comment %}
+   
       <div class="page-title__content">
          <h2 class="heading box-text {% if product.collections[0].handle == 'for-girls' %}text-dark{% endif %}">Product Details</h2>
       </div>
     {% endcomment %}
+    
 </div>
 
 
