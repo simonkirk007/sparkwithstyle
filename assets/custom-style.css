@@ -657,3 +657,19 @@ a.pagination__item.pagination__item--current {
     letter-spacing: 0;
     line-height: 22px;
 }
+
+
+.product li.thumbnail-list__item {
+}
+
+.product  .thumbnail-list__item:before {
+    padding: 0;
+}
+
+.product .product__media-list {
+    margin-bottom: 5px;
+}
+
+.product .slider.slider--tablet-up {
+    padding: 0 !important;
+}
