@@ -182,7 +182,7 @@ form#create_customer label {
 }
 
 .cart-item .cart-item__quantity, .cart-items .cart-items__heading--wide{
-  display: block;
+  display: block !important;
 }
 
 #customer_login button.themeBtn.themeBtn--full.justify-content-center {
