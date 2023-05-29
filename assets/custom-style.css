@@ -673,6 +673,7 @@ a.pagination__item.pagination__item--current {
 
 .product .slider.slider--tablet-up {
     padding: 0 !important;
+    padding-right: 15px !important;
 }
 
 
