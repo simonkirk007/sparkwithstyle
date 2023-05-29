@@ -800,3 +800,12 @@ a.collection_all-button.button {
     height: 15px;
     align-items: center;
 }
+
+
+.cart__warnings a.themeBtn {
+    margin: 0 auto;
+}
+
+.cart__warnings a.themeBtn:hover::before, .cart__warnings a.themeBtn:hover::after {
+    height: 51%;
+}
