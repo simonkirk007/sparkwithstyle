@@ -1,19 +1,23 @@
 <div class="page-title">
     <div class="page-title__img">
+
+              <nav class="breadcrumb">
+                <ul>
+                  <li><a href="{{ shop.url }}">Home</a></li>
+                  {% comment %}
+                  {% for collection in product.collections %}
+                    <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
+                  {% endfor %}
+                  {% endcomment %}
+                  <li><a href="/collections/all">Shop</a></li>
+                  <li class="active">{{ product.title }}</li>
+                </ul>
+              </nav>
+
+      
       {% if product.collections[0].handle == 'mens-wear' %}
       
-        <nav class="breadcrumb">
-          <ul>
-            <li><a href="{{ shop.url }}">Home</a></li>
-            {% comment %}
-            {% for collection in product.collections %}
-              <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
-            {% endfor %}
-            {% endcomment %}
-            <li><a href="/collections/all">Shop</a></li>
-            <li class="active">{{ product.title }}</li>
-          </ul>
-        </nav>
+
       
         {% comment %}<img src="{{ 'mens-single-product-banner.webp' | asset_url }}" alt="image" class="imgFluid">{% endcomment %}
         
