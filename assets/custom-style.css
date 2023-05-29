@@ -716,7 +716,7 @@ a.pagination__item.pagination__item--current {
 }
 
 .page-title.single-product-page {
-    min-height: 180px;
+    min-height: 80px;
 }
 
 .page-title.single-product-page nav.breadcrumb {
