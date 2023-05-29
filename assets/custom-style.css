@@ -708,3 +708,13 @@ a.pagination__item.pagination__item--current {
 }
 
 .page-title.single-product-page nav.breadcrumb {background-color: transparent;}
+
+.page-title.single-product-page nav.breadcrumb ul {
+    height: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.page-title.single-product-page nav.breadcrumb ul li {
+    font-size: 20px;
+}
