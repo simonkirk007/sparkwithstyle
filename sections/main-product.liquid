@@ -22,9 +22,16 @@
        <h2 class="heading box-text {% if product.collections[0].handle == 'for-girls' %}text-dark{% endif %}">Product Details</h2>
     </div>
 </div>
-<div class="breadcrumb">
-  {{ breadcrumb }}
-</div>
+
+<nav class="breadcrumb">
+  <ul>
+    <li><a href="{{ shop.url }}">Home</a></li>
+    {% for collection in product.collections %}
+      <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
+    {% endfor %}
+    <li class="active">{{ product.title }}</li>
+  </ul>
+</nav>
 
 
 <section
