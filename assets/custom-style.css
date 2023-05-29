@@ -722,3 +722,17 @@ a.pagination__item.pagination__item--current {
 .page-title.single-product-page nav.breadcrumb ul li {
     font-size: 20px;
 }
+
+
+.page-title.single-product-page nav.breadcrumb ul li:not(:last-child)::after {
+    content: '>';
+    margin-left: 15px;
+}
+
+.page-title.single-product-page nav.breadcrumb ul li a:hover {
+    color: var(--color-primary);
+}
+
+.page-title.single-product-page nav.breadcrumb ul li a {
+    text-decoration: underline !important;
+}
