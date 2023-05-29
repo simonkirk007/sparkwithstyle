@@ -683,8 +683,9 @@ a.pagination__item.pagination__item--current {
 }
 
 .product media-gallery .thumbnail-slider ul.thumbnail-list {
-    flex-direction: column;
+    flex-direction: column !important;
     width: auto;
+    display: flex;
 }
 
 .product media-gallery slider-component.slider-mobile-gutter {
