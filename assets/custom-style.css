@@ -695,7 +695,7 @@ a.pagination__item.pagination__item--current {
 
 .product media-gallery slider-component.thumbnail-slider {
     width: 30%;
-    margin-top: -85px;
+    margin-top: 0px;
     padding: 0px 0px;
 }
 
