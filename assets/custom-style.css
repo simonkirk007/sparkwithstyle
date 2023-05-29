@@ -702,3 +702,9 @@ a.pagination__item.pagination__item--current {
 .product media-gallery slider-component.thumbnail-slider li.thumbnail-list__item {
     width: 100% !important;
 }
+
+.page-title.single-product-page {
+    min-height: 180px;
+}
+
+.page-title.single-product-page nav.breadcrumb {background-color: transparent;}
