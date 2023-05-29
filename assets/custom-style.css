@@ -671,7 +671,7 @@ a.pagination__item.pagination__item--current {
     margin-bottom: 5px;
 }
 
-.product .slider.slider--tablet-up {
+.product .slider {
     padding: 0 !important;
     padding-right: 15px !important;
 }
