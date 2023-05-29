@@ -658,11 +658,10 @@ a.pagination__item.pagination__item--current {
     line-height: 22px;
 }
 
-
-.product li.thumbnail-list__item {
+.product .thumbnail{
+  position: unset !important;
 }
-
-.product  .thumbnail-list__item:before {
+.product .thumbnail-list__item:before {
     padding: 0;
 }
 
