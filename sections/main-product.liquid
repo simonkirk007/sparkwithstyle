@@ -26,9 +26,12 @@
 <nav class="breadcrumb">
   <ul>
     <li><a href="{{ shop.url }}">Home</a></li>
+    {% comment %}
     {% for collection in product.collections %}
       <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
     {% endfor %}
+    {% endcomment %}
+    <li><a href="/collections/all">Shop</a></li>
     <li class="active">{{ product.title }}</li>
   </ul>
 </nav>
