@@ -785,3 +785,18 @@ a.collection_all-button.button {
     line-height: 1.5;
     letter-spacing: 0;
 }
+
+.themeBtn svg.spinner {
+    height: 15px;
+}
+
+.themeBtn svg.spinner circle.path {
+    stroke: var(--color-primary);
+}
+
+.themeBtn .loading-overlay__spinner {
+    display: inline-flex;
+    justify-content: center;
+    height: 15px;
+    align-items: center;
+}
