@@ -674,3 +674,29 @@ a.pagination__item.pagination__item--current {
 .product .slider.slider--tablet-up {
     padding: 0 !important;
 }
+
+
+
+media-gallery {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+media-gallery .thumbnail-slider ul.thumbnail-list.slider--tablet-up {
+    flex-direction: column;
+    width: auto;
+}
+
+media-gallery slider-component.slider-mobile-gutter {
+    width: 100%;
+}
+
+media-gallery slider-component.thumbnail-slider {
+    width: 30%;
+    margin-top: -85px;
+    padding: 0px 0px;
+}
+
+media-gallery slider-component.thumbnail-slider li.thumbnail-list__item {
+    width: 100% !important;
+}
