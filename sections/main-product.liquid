@@ -2,9 +2,8 @@
     <div class="page-title__img">
       {% if product.collections[0].handle == 'mens-wear' %}
         <img src="{{ 'mens-single-product-banner.webp' | asset_url }}" alt="image" class="imgFluid">
-      {% elsif product.collections[0].handle == 'for-girls' %}
+        {% elsif product.collections[0].handle == 'for-girls' %}
            <img src="https://cdn.shopify.com/s/files/1/0750/3006/9569/files/Group_156.png?v=1682685975" alt="image" class="imgFluid">
-       
         {% else %}
         <img src="{% if block.settings.banner_img !=blank %}{{ block.settings.banner_img | img_url: 'master' }} {% else %}{{ 'product-banner-2.png' | asset_url }}{% endif %}" alt="image" class="imgFluid">
       {% endif %}
