@@ -27,7 +27,7 @@ $(".cus-product-tabs .custom-tabs li:first-child a").addClass("active");
 $(".cus-product-tabs .tab-content .tab-pane:first-child").addClass("show active");
 
 // Product Slider
-$(".banner-slider").slick({
+$(".banner-wrap").slick({
   autoplay: true,
   autoplaySpeed: 2000,
   slidesToShow: 1,
