@@ -707,7 +707,11 @@ a.pagination__item.pagination__item--current {
     min-height: 180px;
 }
 
-.page-title.single-product-page nav.breadcrumb {background-color: transparent;}
+.page-title.single-product-page nav.breadcrumb {
+    background-color: transparent; 
+    padding: 0;
+    margin: 0;
+}
 
 .page-title.single-product-page nav.breadcrumb ul {
     height: 100%;
