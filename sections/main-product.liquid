@@ -1,7 +1,21 @@
 <div class="page-title">
     <div class="page-title__img">
       {% if product.collections[0].handle == 'mens-wear' %}
-        <img src="{{ 'mens-single-product-banner.webp' | asset_url }}" alt="image" class="imgFluid">
+      
+        <nav class="breadcrumb">
+          <ul>
+            <li><a href="{{ shop.url }}">Home</a></li>
+            {% comment %}
+            {% for collection in product.collections %}
+              <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
+            {% endfor %}
+            {% endcomment %}
+            <li><a href="/collections/all">Shop</a></li>
+            <li class="active">{{ product.title }}</li>
+          </ul>
+        </nav>
+      
+        {% comment %}<img src="{{ 'mens-single-product-banner.webp' | asset_url }}" alt="image" class="imgFluid">{% endcomment %}
         {% elsif product.collections[0].handle == 'for-girls' %}
            <img src="https://cdn.shopify.com/s/files/1/0750/3006/9569/files/Group_156.png?v=1682685975" alt="image" class="imgFluid">
         {% else %}
@@ -23,18 +37,6 @@
     </div>
 </div>
 
-<nav class="breadcrumb">
-  <ul>
-    <li><a href="{{ shop.url }}">Home</a></li>
-    {% comment %}
-    {% for collection in product.collections %}
-      <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
-    {% endfor %}
-    {% endcomment %}
-    <li><a href="/collections/all">Shop</a></li>
-    <li class="active">{{ product.title }}</li>
-  </ul>
-</nav>
 
 
 <section
