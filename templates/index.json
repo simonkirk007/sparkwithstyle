@@ -4,9 +4,9 @@
       "type": "cus-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/banner-bg.jpg",
-        "sub_title": "Welcome to Our Website",
+        "sub_title": "",
         "title": "SPARK IN <span class=\"box-text\">STYLE<\/span>",
-        "content": "<p>I am Susan Thomas, originally from Gujarat, India now residing in Orland Park, IL. Fashion is my passion, especially Indian outfits. I hold high values to modesty, traditional, but yet classy clothing.<\/p>",
+        "content": "<p>Unleash your inner style and add some sparkles to your closet – vibrant, breezy, sophisticated styles for every fashionista<\/p>",
         "button_text": "Shop Now",
         "button_link": "shopify:\/\/collections\/all"
       }
