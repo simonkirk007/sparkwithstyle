@@ -677,26 +677,26 @@ a.pagination__item.pagination__item--current {
 
 
 
-media-gallery {
+.product media-gallery {
     display: flex;
     flex-direction: row-reverse;
 }
 
-media-gallery .thumbnail-slider ul.thumbnail-list.slider--tablet-up {
+.product media-gallery .thumbnail-slider ul.thumbnail-list {
     flex-direction: column;
     width: auto;
 }
 
-media-gallery slider-component.slider-mobile-gutter {
+.product media-gallery slider-component.slider-mobile-gutter {
     width: 100%;
 }
 
-media-gallery slider-component.thumbnail-slider {
+.product media-gallery slider-component.thumbnail-slider {
     width: 30%;
     margin-top: -85px;
     padding: 0px 0px;
 }
 
-media-gallery slider-component.thumbnail-slider li.thumbnail-list__item {
+.product media-gallery slider-component.thumbnail-slider li.thumbnail-list__item {
     width: 100% !important;
 }
