@@ -172,7 +172,9 @@ form#customer_login label,
 form#create_customer label {
     display: none;
 }
-
+.cart-item .cart-item__quantity quantity-input.quantity.cart-quantity {
+    display: none;
+}
 .cart-item .cart-item__quantity, .cart-items .cart-items__heading--wide{
   display: block;
 }
