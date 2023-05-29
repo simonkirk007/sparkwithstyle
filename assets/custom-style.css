@@ -178,9 +178,8 @@ form#create_customer label {
 }
 
 .cart-items .cart-items__heading--wide {
-    font-size: 0;
+    opacity: 0;
 }
-
 .cart-item .cart-item__quantity, .cart-items .cart-items__heading--wide{
   display: block !important;
 }
