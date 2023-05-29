@@ -768,3 +768,7 @@ a.pagination__item.pagination__item--current {
 .banner-wrap button.slick-arrow::before {
     color: #fff;
 }
+
+a.collection_all-button.button {
+    line-height: 1.5;
+}
