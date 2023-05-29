@@ -658,9 +658,11 @@ a.pagination__item.pagination__item--current {
     line-height: 22px;
 }
 
-.product .thumbnail{
-  position: unset !important;
+.product .thumbnail {
+    position: unset!important;
+    height: auto;
 }
+
 .product .thumbnail-list__item:before {
     padding: 0;
 }
