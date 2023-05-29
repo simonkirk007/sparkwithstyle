@@ -733,6 +733,22 @@ a.pagination__item.pagination__item--current {
     color: var(--color-primary);
 }
 
+.page-title.single-product-page nav.breadcrumb ul li a::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 300ms;
+}
+
 .page-title.single-product-page nav.breadcrumb ul li a {
-    text-decoration: underline !important;
+    position: relative;
+    font-weight: 600;
+}
+
+.page-title.single-product-page nav.breadcrumb ul li a:hover::before {
+    width: 100%;
 }
