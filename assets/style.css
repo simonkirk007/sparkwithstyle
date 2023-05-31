@@ -1504,9 +1504,7 @@ table tr th {
     min-height: max-content;
     padding: 30px 0;
 }
-Details-1-template--18935978328385__product-grid .list-menu__item:nth-child(1) {
-    display: none;
-}
+#Details-1-template--18935978328385__product-grid .list-menu__item:nth-child(1) { display: none;}
 .cart__blocks.left {
   display: flex;
   align-items: flex-end;
