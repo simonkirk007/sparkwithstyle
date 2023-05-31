@@ -7,7 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 
-
+.list-menu__item:nth-child(6) { display:none;}
 
 /* Root Styling */
 :root {
