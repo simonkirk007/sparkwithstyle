@@ -7,7 +7,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 
-
+#Details-2-template--18935978328385__product-grid .list-menu__item:nth-child(6) { display:none;}
+#Details-2-template--18935978328385__product-grid .list-menu__item:nth-child(7) { display:none;}
+#Details-2-template--18935978328385__product-grid .list-menu__item:nth-child(8) { display:none;}
+#Details-2-template--18935978328385__product-grid .list-menu__item:nth-child(9) { display:none;}
+#Details-2-template--18935978328385__product-grid .list-menu__item:nth-child(10) { display:none;}
+#Details-2-template--18935978328385__product-grid .list-menu__item:nth-child(11) { display:none;}
+#Details-2-template--18935978328385__product-grid .list-menu__item:nth-child(13) { display:none;}
+#Details-2-template--18935978328385__product-grid .list-menu__item:nth-child(16) { display:none;}
+#Details-2-template--18935978328385__product-grid .list-menu__item:nth-child(17) { display:none;}
 
 /* Root Styling */
 :root {
