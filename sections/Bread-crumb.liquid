@@ -14,7 +14,7 @@
       {%- when 'product' -%}
         {%- if collection.url -%}
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__links" href="">All Categories</a>
+            {{ collection.title | link_to: collection.url }}
           </li>
         {%- endif -%}
         <li class="breadcrumbs__item">
