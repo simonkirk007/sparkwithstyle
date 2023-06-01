@@ -1526,3 +1526,30 @@ button.collection_all-button.button a:hover
 {
  color: #0056b3;  
 }
+.cart-item__quantity {
+    position: absolute;
+}
+
+.cart-item__quantity .cart-item__quantity-wrapper {
+    position: absolute !important;
+    left: -595px;
+    top: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100px;
+}
+
+.cart-item__quantity .cart-item__quantity-wrapper::after {
+    content: "Remove";
+    position: absolute;
+    bottom: -5px;
+}
+
+cart-remove-button#Remove-1 {}
+
+.cart-item__quantity .cart-item__quantity-wrapper cart-remove-button {
+    margin: 0 !important;
+}
