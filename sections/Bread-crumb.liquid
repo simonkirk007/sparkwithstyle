@@ -15,7 +15,7 @@
         {%- if collection.url -%}
           <li class="breadcrumbs__item">
             {{ collection.title | link_to: collection.url }}
-          123
+<!--           123 -->
           </li>
         {%- endif -%}
         <li class="breadcrumbs__item">
@@ -25,6 +25,7 @@
         {%- if current_tags -%}
           <li class="breadcrumbs__item">
             {{ collection.title | link_to: collection.url }}
+          132
           </li>
           <li class="breadcrumbs__item">
             {%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+"}}{%- endcapture -%}
