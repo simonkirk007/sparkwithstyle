@@ -18,6 +18,14 @@
 #Details-2-template--18935978328385__product-grid .list-menu__item:nth-child(17) { display:none;}
 #Details-2-template--18935978328385__product-grid .list-menu__item:nth-child(15) { display:none;}
 
+
+#Details-2-template--18936012341569__product-grid ul.list-unstyled.no-js-hidden li.list-menu__item.facets__item:nth-child(1) {display:none;}
+#Details-2-template--18936012341569__product-grid ul.list-unstyled.no-js-hidden li.list-menu__item.facets__item:nth-child(2) {display:none;}
+#Details-2-template--18936012341569__product-grid ul.list-unstyled.no-js-hidden li.list-menu__item.facets__item:nth-child(4) {display:none;}
+#Details-2-template--18936012341569__product-grid ul.list-unstyled.no-js-hidden li.list-menu__item.facets__item:nth-child(5) {display:none;}
+#Details-2-template--18936012341569__product-grid ul.list-unstyled.no-js-hidden li.list-menu__item.facets__item:nth-child(7) {display:none;}
+#Details-2-template--18936012341569__product-grid ul.list-unstyled.no-js-hidden li.list-menu__item.facets__item:nth-child(8) {display:none;}
+
 /* Root Styling */
 :root {
   --font-lemon-regular: "Lemon Milk Regular";
