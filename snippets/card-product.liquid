@@ -53,8 +53,8 @@
 
         {% if card_product.compare_at_price > card_product.price %}
           <div class="price price--on-sale">
-            <span class="price--regular">{{ card_product.compare_at_price | money }}</span>
-            <span class="price--sale">{{ card_product.price | money }}</span>
+            <span class="price--regular">test{{ card_product.compare_at_price | money }}</span>
+            <span class="price--sale">test{{ card_product.price | money }}</span>
           </div>
         {% else %}
           <div class="price">{{ card_product.price | money }}</div>
