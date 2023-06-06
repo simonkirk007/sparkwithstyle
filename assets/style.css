@@ -70,7 +70,11 @@ td.cart-item__media img {
     width: 100%;
     object-fit: cover;
 }
-
+.cart-item__quantity .cart-item__quantity-wrapper {
+    left: 1.23rem !important;
+    top: 50% !important;
+    transform: translate(-50%,-50%) !important;
+}
 
 /* Root Styling */
 :root {
