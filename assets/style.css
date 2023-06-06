@@ -26,6 +26,53 @@
 #Details-2-template--18936012341569__product-grid ul.list-unstyled.no-js-hidden li.list-menu__item.facets__item:nth-child(7) {display:none;}
 #Details-2-template--18936012341569__product-grid ul.list-unstyled.no-js-hidden li.list-menu__item.facets__item:nth-child(8) {display:none;}
 
+
+cart-items.page-width.section-template--18935978459457__cart-items-padding form#cart {
+    max-width: 60%;
+    margin: auto;
+    position: relative;
+}
+
+
+cart-items.page-width.section-template--18935978459457__cart-items-padding form#cart tr.cart-item {
+    position: relative;
+}
+
+
+.cart-item__quantity-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+td.cart-item__quantity {
+    padding: 0;
+}
+
+td.cart-item__quantity {
+    padding: 0 !important;
+}
+
+td.cart-item__quantity {
+    top: 90%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+}
+
+
+div#main-cart-items {
+}
+
+td.cart-item__media {
+    width: 20%;
+}
+
+td.cart-item__media img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
 /* Root Styling */
 :root {
   --font-lemon-regular: "Lemon Milk Regular";
