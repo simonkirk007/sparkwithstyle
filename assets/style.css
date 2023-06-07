@@ -75,6 +75,9 @@ td.cart-item__media img {
     top: 50% !important;
     transform: translate(-50%,-50%) !important;
 }
+span.label-show-less.label-text {
+    display: none;
+}
 
 /* Root Styling */
 :root {
