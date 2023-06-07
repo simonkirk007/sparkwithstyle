@@ -1614,7 +1614,7 @@ button.collection_all-button.button a:hover
     margin: 0 !important;
 }
 .product__info-wrapper .product-form__input input[type=radio]+label {
-    padding: 17px 9px;
+    padding: 17px 9px !important;
     border-radius: 0;
     font-size: 14px;
 }
