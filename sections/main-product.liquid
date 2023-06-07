@@ -466,10 +466,7 @@
                 {%- endif -%}
                 {{ 'component-card.css' | asset_url | stylesheet_tag }}
                 {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
-                {%- if block.settings.enable_quick_add -%}
-                  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
-                  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
-                {%- endif -%}
+               
               </product-recommendations>
             {%- when 'icon-with-text' -%}
               {% render 'icon-with-text',
@@ -490,6 +487,10 @@
                   {{ product.description }}
                 </div>
               {%- endif -%}
+               {%- if block.settings.enable_quick_add -%}
+                  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+                  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+                {%- endif -%}
                           
       </product-info>
     </div>
