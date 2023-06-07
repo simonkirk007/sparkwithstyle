@@ -79,6 +79,12 @@ span.label-show-less.label-text {
     display: none;
 }
 
+.product__info-wrapper .product-form__input input[type=radio]+label {
+    padding: 17px 9px;
+    border-radius: 0;
+    font-size: 14px;
+}
+
 /* Root Styling */
 :root {
   --font-lemon-regular: "Lemon Milk Regular";
