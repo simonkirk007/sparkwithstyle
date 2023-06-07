@@ -466,7 +466,10 @@
                 {%- endif -%}
                 {{ 'component-card.css' | asset_url | stylesheet_tag }}
                 {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
-               
+                {%- if block.settings.enable_quick_add -%}
+                  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+                  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+                {%- endif -%}
               </product-recommendations>
             {%- when 'icon-with-text' -%}
               {% render 'icon-with-text',
@@ -477,20 +480,17 @@
           {%- endcase -%}
         {%- endfor -%}
             
-        <a href="{{ product.url }}" class="link product__view-details animate-arrow">
-          {{ 'products.product.view_full_details' | t }}
-          {% render 'icon-arrow' %}
-        </a>
+       
 
                            {%- if product.description != blank -%}
                 <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                   {{ product.description }}
                 </div>
               {%- endif -%}
-               {%- if block.settings.enable_quick_add -%}
-                  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
-                  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
-                {%- endif -%}
+               <a href="{{ product.url }}" class="link product__view-details animate-arrow">
+          {{ 'products.product.view_full_details' | t }}
+          {% render 'icon-arrow' %}
+        </a>
                           
       </product-info>
     </div>
