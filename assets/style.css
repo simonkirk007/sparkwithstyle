@@ -79,11 +79,7 @@ span.label-show-less.label-text {
     display: none;
 }
 
-.product__info-wrapper .product-form__input input[type=radio]+label {
-    padding: 17px 9px;
-    border-radius: 0;
-    font-size: 14px;
-}
+
 
 /* Root Styling */
 :root {
@@ -1614,9 +1610,11 @@ button.collection_all-button.button a:hover
     position: absolute;
     bottom: -5px;
 }
-
-cart-remove-button#Remove-1 {}
-
 .cart-item__quantity .cart-item__quantity-wrapper cart-remove-button {
     margin: 0 !important;
+}
+.product__info-wrapper .product-form__input input[type=radio]+label {
+    padding: 17px 9px;
+    border-radius: 0;
+    font-size: 14px;
 }
