@@ -1618,3 +1618,31 @@ button.collection_all-button.button a:hover
     border-radius: 0;
     font-size: 14px;
 }
+.header__icons {
+    display: none;
+}
+
+header.header {
+    width: 100% !important;
+    display: table;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    position: inherit;
+    margin-top: 47px;
+    background: transparent;
+    margin-bottom: -90px;
+}
+
+nav.header__inline-menu {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+sticky-header.header-wrapper.color-background-1.gradient.header-wrapper--border-bottom {
+    position: relative !important;
+}
+
+.section-header {
+    position: relative;
+}
