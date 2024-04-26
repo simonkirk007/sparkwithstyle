@@ -92,7 +92,6 @@
     },
     "a6980ae8-59cf-42e1-bfc5-8b69fcafefc7": {
       "type": "cus-reviews",
-      "disabled": true,
       "blocks": {
         "be608de8-a107-467c-accd-689dc69276b3": {
           "type": "column",
@@ -121,9 +120,59 @@
         "2e75eec3-56e6-4207-86aa-b4cea9fe96ac",
         "ef244d29-2592-4d2a-949d-65cfde7f419e"
       ],
+      "disabled": true,
       "settings": {
         "title": "Our Customer Feedback",
         "sub_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    },
+    "cus_products_sec_H3wYUD": {
+      "type": "cus-products-sec",
+      "settings": {
+        "title": "Collections",
+        "collection": ""
+      }
+    },
+    "cus_reviews_h3jhG7": {
+      "type": "cus-reviews",
+      "blocks": {
+        "column_3cKeTJ": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "content": ""
+          }
+        },
+        "column_NWndih": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "content": ""
+          }
+        },
+        "column_nR4zCJ": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_3cKeTJ",
+        "column_NWndih",
+        "column_nR4zCJ"
+      ],
+      "settings": {
+        "title": "Collections",
+        "sub_title": "Collections"
+      }
+    },
+    "cus_review_new_icMRe8": {
+      "type": "cus-review-new",
+      "settings": {
+        "title": "Collections",
+        "sub_title": "Collections"
       }
     }
   },
@@ -133,6 +182,9 @@
     "a1a427ef-c962-4148-9741-169cd1ef69a7",
     "7ac861c3-51bf-4807-8c4c-39c83cf0dfd7",
     "976d88ac-c4a0-4819-bb31-acf2439fff0a",
-    "a6980ae8-59cf-42e1-bfc5-8b69fcafefc7"
+    "a6980ae8-59cf-42e1-bfc5-8b69fcafefc7",
+    "cus_products_sec_H3wYUD",
+    "cus_reviews_h3jhG7",
+    "cus_review_new_icMRe8"
   ]
 }
