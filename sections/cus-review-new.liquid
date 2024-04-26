@@ -1,6 +1,90 @@
+<div class='reviews mar-y'>
+    <div class='container'>
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-8">
+                <div class='section-content text-center'>
+                    <div class='heading'>{{ section.settings.title }}</div>
+                    <p>{{ section.settings.sub_title }}</p>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+
+        {%- for block in section.blocks -%}
+            <div class='col-lg-4'>
+                <div class='reviews-card'>
+                    <div class="wrapper">
+                        <div class="user-details">
+                            <img src='{{ block.settings.image_1 | img_url: 'master' }}' alt='image' class='imgFluid user-details__img'
+                                loading='lazy'>
+                            <div class="user-details__name">{{ block.settings.title }}</div>
+                        </div>
+                        <div class="reviews-card__rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                    </div>
+                    <div class='reviews-card__content'>{{ block.settings.content }}</div>
+                </div>
+            </div>
+        {% endfor %}
+            
+            
+        </div>
+    </div>
+</div>
+
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
+    {
+      "name": "Cus Reviews New",
+      "tag": "section",
+      "class": "announcement-bar-section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Collections",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "sub_title",
+          "default": "Collections",
+          "label": "Sub Title"
+        }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Cus Reviews New",
+    
+        "settings": [
+        {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content"
+        }
+        ]
+      }
+    ],
+    "presets": [
+        {
+          "name": "Cus Reviews New"
+        }
+      ]
+    }
+    {% endschema %}
